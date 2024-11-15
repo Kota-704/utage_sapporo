@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@import "../../assets/scss/variables.scss";
+
+/*--------------------
+aside
+--------------------*/
+.aside {
+  position: fixed;
+  right: 32px;
+  top: 40%;
+  z-index: 100;
+}
+
+.link_container {
+  align-items: center;
+  flex-direction: column;
+  gap: 36px;
+  justify-content: center;
+}
+
+.contact_link {
+  display: block;
+}

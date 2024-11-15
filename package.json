@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.80.7"
+  },
+  "scripts": {
+    "sass": "sass --watch assets/scss:assets/css components:components pages:pages"
+  }
+}

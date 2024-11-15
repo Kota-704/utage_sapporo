@@ -1,0 +1,17 @@
+[
+  {
+    "src": "assets/scss/",
+    "dest": "assets/css/",
+    "style": "compressed"
+  },
+  {
+    "src": "components/**/**.scss",
+    "dest": "components/**/**.css",
+    "style": "compressed"
+  },
+  {
+    "src": "pages/**/**.scss",
+    "dest": "pages/**/**.css",
+    "style": "compressed"
+  }
+]

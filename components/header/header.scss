@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+@import "../../assets/scss/variables.scss";
+
+/*--------------------
+header
+--------------------*/
+
+.fv_header {
+  background-color: #111111;
+  height: 120px;
+  width: 100%;
+  z-index: 120;
+}
+
+.header {
+  background-color: #111111;
+  height: 120px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 120;
+}
+
+.header_layout {
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.hamburger {
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+
+.hamburger span {
+  background-color: $pure_white;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.top {
+  top: 0;
+  width: 24px;
+}
+
+.hamburger.active .top {
+  transform: rotate(45deg) translate(10px, 10px);
+  width: 30px;
+}
+
+.middle {
+  opacity: 1;
+  top: 10px;
+  width: 30px;
+}
+
+.hamburger.active .middle {
+  opacity: 0;
+}
+
+.bottom {
+  top: 20px;
+  width: 16px;
+}
+
+.hamburger.active .bottom {
+  transform: rotate(-45deg) translate(4px, -5px);
+  width: 30px;
+}
+
+.header_nav.active {
+  display: none;
+}
+
+.header_nav {
+  display: block;
+}
+
+.header_nav_container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_nav_container * + * {
+  margin-left: 60px;
+}
+
+.header_logo {
+  height: 91px;
+  width: 91px;
+}
+
+.header_link {
+  color: $pure_white;
+}
+
+.empty {
+  height: 1px;
+  width: 1px;
+}
+
+/*--------------------
+hamburger_content
+--------------------*/
+
+.hamburger_content {
+  display: none;
+}
+
+.hamburger_content.active {
+  background-color: #00000020;
+  background-image: url("../../assets/img/backgrounds/fv_background.png");
+  background-size: cover;
+  display: block;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 110;
+}
+
+.overlay {
+  background-color: $deep_black;
+  height: 100%;
+  left: 0;
+  opacity: 0.45;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.hamburger_content_layout {
+  align-items: center;
+  height: 100%;
+  gap: 98px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  z-index: 110;
+}
+
+.left_content {
+  max-width: 310px;
+  width: 100%;
+}
+
+.left_content img {
+  width: 100%;
+}
+
+.hamburger_list_container {
+  gap: 23px 134px;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.hamburger_link {
+  color: $pure_white;
+  font-size: 22px;
+}
+
+.link_button_container {
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 86px;
+}
+
+.link_button {
+  @include button_link($pure_white, 270px);
+}
+
+.sns_link_container {
+  align-items: center;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 86px;
+}

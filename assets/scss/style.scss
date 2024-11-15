@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@import "../../assets/scss/variables.scss";
+
+/*--------------------
+fv
+--------------------*/
+
+.fv {
+  padding-top: 120px;
+}
+
+.video_wrap {
+  height: calc(100vh - 120px);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.fv_video {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.fv_title_image,
+.background_image {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.fv_title_image {
+  left: 50%;
+  margin: 0 auto;
+  max-width: 725px;
+  object-fit: contain;
+  top: 0;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+/*--------------------
+about
+--------------------*/
+.about {
+  background: transparent
+    linear-gradient(180deg, #000000 0%, #000000af 49%, #000000 100%) 0% 0%
+    no-repeat padding-box;
+  background-image: url("../img/backgrounds/about_background.png");
+  background-size: cover;
+  width: 100%;
+}
+
+.about_text {
+  color: $pure_white;
+  margin: 0 auto;
+  max-width: 792px;
+  padding-bottom: 130px;
+  padding-top: 150px;
+  text-align: center;
+  width: 100%;
+}

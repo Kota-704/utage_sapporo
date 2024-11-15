@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Noto Sans JP Bold";
+  src: url("../fonts/NotoSansJP-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans JP Medium";
+  src: url("../fonts/NotoSansJP-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans JP Regular";
+  src: url("../fonts/NotoSansJP-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "M Plus 1c";
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+}
+/*--------------------
+aside
+--------------------*/
+.aside {
+  position: fixed;
+  right: 32px;
+  top: 40%;
+  z-index: 100;
+}
+
+.link_container {
+  align-items: center;
+  flex-direction: column;
+  gap: 36px;
+  justify-content: center;
+}
+
+.contact_link {
+  display: block;
+}
+
+/*# sourceMappingURL=aside.css.map */

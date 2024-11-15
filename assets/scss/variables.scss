@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+// 変数定義
+$black: #050505;
+$blue: #005bac;
+$dark_blue: #23254c;
+$deep_black: #000000;
+$gray: #b4b4b4;
+$pure_white: #ffffff;
+$yellow: #feeb00;
+
+@font-face {
+  font-family: "Noto Sans JP Bold";
+  src: url("../fonts/NotoSansJP-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans JP Medium";
+  src: url("../fonts/NotoSansJP-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans JP Regular";
+  src: url("../fonts/NotoSansJP-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "M Plus 1c";
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+}
+
+@mixin button_link($color, $width) {
+  border: 1px solid $color;
+  color: $color;
+  border-radius: 5px;
+  padding: 14px 18px;
+  text-align: center;
+  width: $width;
+}
