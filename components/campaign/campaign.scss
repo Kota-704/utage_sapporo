@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@import "../../assets/scss/variables.scss";
+
+/*--------------------
+campaign
+--------------------*/
+
+.swiper_campaign {
+  height: 560px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.swiper-slide {
+  flex-shrink: initial !important;
+  overflow: hidden;
+  text-align: center;
+  width: calc(100% / 3) !important;
+}
+
+.campaign_thumbnail {
+  width: 100%;
+}
+
+.campaign_thumbnail img {
+  object-fit: contain;
+  width: 100%;
+}
