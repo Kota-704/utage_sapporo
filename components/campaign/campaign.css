@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Noto Sans JP Bold";
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/NotoSansJP-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans JP Medium";
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/NotoSansJP-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans JP Regular";
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/NotoSansJP-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "M Plus 1c";
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+}
+/*--------------------
+campaign
+--------------------*/
+.swiper_campaign {
+  height: 560px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.swiper-slide {
+  flex-shrink: initial !important;
+  overflow: hidden;
+  text-align: center;
+  width: 33.3333333333% !important;
+}
+
+.campaign_thumbnail {
+  width: 100%;
+}
+
+.campaign_thumbnail img {
+  object-fit: contain;
+  width: 100%;
+}
+
+/*# sourceMappingURL=campaign.css.map */
