@@ -6,6 +6,32 @@
 events
 --------------------*/
 
-.events {
-  margin-top: 100px;
+.events_layout {
+  align-items: center;
+  gap: 80px;
+  justify-content: center;
+}
+
+.event_item {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.event_title {
+  color: $pure_white;
+  font-size: 20px;
+}
+
+.event_description {
+  color: $pure_white;
+  font-size: 14px;
+  margin-top: 8px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.no_events {
+  color: $pure_white;
+  font-size: 22px;
 }

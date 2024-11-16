@@ -48,7 +48,8 @@
       </section>
 
       <section class="events">
-        <div class="events_container oswald_B">
+        <div class="events_container">
+          <h2 class="section_title oswald_B">PICK UP EVENTS</h2>
           <?php get_template_part('components/component_events/component_events'); ?>
         </div>
       </section>
