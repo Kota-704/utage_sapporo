@@ -11,8 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
       hamburger.classList.toggle("active");
       hamburgerContent.classList.toggle("active");
       headerNav.classList.toggle("active");
-
-      console.log("headerNav active:", headerNav.classList.contains("active"));
     });
   }
 });

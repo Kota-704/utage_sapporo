@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/components/component_events/component_events.css" />
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/style.css" />
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title><?php echo esc_html( wp_get_document_title() ); ?></title>
     <?php wp_head(); ?>
   </head>
@@ -49,16 +49,23 @@
 
       <section class="events">
         <div class="events_container">
-          <h2 class="section_title oswald_B">PICK UP EVENTS</h2>
+          <h2 class="event_top_title oswald_B">PICK UP EVENTS</h2>
           <?php get_template_part('components/component_events/component_events'); ?>
         </div>
       </section>
+
+      <?php
+        get_template_part('components/campaign/campaign');
+      ?>
 
     </main>
     <?php get_template_part('components/aside/aside'); ?>
 
     <?php get_template_part('components/footer/footer'); ?>
+    <?php get_footer(); ?>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/script.js"></script>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/components/header/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <?php wp_footer(); ?>
   </body>
 </html>

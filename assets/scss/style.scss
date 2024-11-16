@@ -78,7 +78,7 @@ events
 .events_container {
   @include section_container;
 }
-.section_title {
+.event_top_title {
   @include cut_out_letters($black, 85px, $yellow);
   background-color: $black;
   padding-bottom: 22px;
@@ -87,4 +87,18 @@ events
   right: -24px;
   text-align: center;
   top: -50px;
+}
+
+/*--------------------
+campaign
+--------------------*/
+
+.campaign {
+  background-color: #030319;
+}
+
+.campaign_top_title {
+  @include cut_out_letters(#030319, 85px, $yellow);
+  padding-top: 42px;
+  text-align: center;
 }

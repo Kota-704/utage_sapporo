@@ -1,22 +1,22 @@
 @font-face {
   font-family: "Noto Sans JP Bold";
-  src: url("../fonts/NotoSansJP-Bold.ttf") format("truetype");
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/NotoSansJP-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans JP Medium";
-  src: url("../fonts/NotoSansJP-Medium.ttf") format("truetype");
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/NotoSansJP-Medium.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans JP Regular";
-  src: url("../fonts/NotoSansJP-Regular.ttf") format("truetype");
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/NotoSansJP-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "M Plus 1c";
-  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Oswald";
-  src: url("../fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/Oswald-VariableFont_wght.ttf") format("truetype");
 }
 /*--------------------
 common_settings
@@ -129,31 +129,8 @@ textarea {
   margin-bottom: 0 !important;
 }
 
-.page_subtitle {
-  font-size: 24px;
-}
-
-.page_title {
-  font-size: 75px;
-}
-
-.aside_text {
-  color: #23254c;
-  font-size: 15px;
-  left: 24px;
-  position: absolute;
-  top: 430px;
-  writing-mode: vertical-rl;
-}
-
-.aside_text span {
-  color: #b4b4b4;
-}
-
-.more_info_link {
-  color: #757575;
-  font-size: 18px;
-  text-decoration: underline;
-}
+/*--------------------
+common_parts
+--------------------*/
 
 /*# sourceMappingURL=base.css.map */
