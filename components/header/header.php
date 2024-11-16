@@ -7,7 +7,7 @@
         <span class="bottom"></span>
       </div>
       <nav class="header_nav">
-        <ul class="header_nav_container flex">
+        <ul class="header_nav_container flex oswald_B">
           <li class="header_list">
             <a href="#" class="header_link">ABOUT</a>
           </li>
