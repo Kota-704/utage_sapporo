@@ -19,7 +19,7 @@ $query = new WP_Query($args);
                   </div>
               <?php endif; ?>
               <div class="news_content">
-                  <h3 class="news_title noto_B"><?php the_title(); ?></h3>
+                  <h3 class="news_title noto_B"><?php echo get_the_date(); ?></h3>
                   <p class="news_description noto_M">
                       <?php the_content(); ?>
                   </p>

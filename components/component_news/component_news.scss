@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@import "../../assets/scss/variables.scss";
+
+/*--------------------
+news
+--------------------*/
+
+.news_layout {
+  align-items: center;
+  gap: 80px;
+  justify-content: center;
+}
+
+.news_item {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.news_title {
+  color: $pure_white;
+  font-size: 20px;
+}
+
+.news_description {
+  color: $pure_white;
+  font-size: 14px;
+  margin-top: 8px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.no_news {
+  color: $pure_white;
+  font-size: 22px;
+}

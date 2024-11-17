@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/components/header/header.css" />
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/components/aside/aside.css" />
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/components/component_events/component_events.css" />
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/components/component_news/component_news.css" />
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/style.css" />
     <link
       rel="stylesheet"
