@@ -102,3 +102,26 @@ campaign
   padding-top: 42px;
   text-align: center;
 }
+
+/*--------------------
+news
+--------------------*/
+.news {
+  background-color: $black;
+  padding: 168px;
+  position: relative;
+}
+
+.news_container {
+  @include section_container;
+}
+.news_top_title {
+  @include cut_out_letters($black, 85px, $yellow);
+  background-color: $black;
+  padding-bottom: 22px;
+  padding-left: 40px;
+  position: absolute;
+  right: -24px;
+  text-align: center;
+  top: -50px;
+}

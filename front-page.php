@@ -58,6 +58,13 @@
         get_template_part('components/campaign/campaign');
       ?>
 
+      <section class="news">
+        <div class="news_container">
+          <h2 class="event_top_title oswald_B">NEWS</h2>
+          <?php get_template_part('components/component_news/component_news'); ?>
+        </div>
+      </section>
+
     </main>
     <?php get_template_part('components/aside/aside'); ?>
 

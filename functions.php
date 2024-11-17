@@ -56,10 +56,22 @@
       echo '<script type="module" src="' . get_template_directory_uri() . '/components/campaign/campaign.js"></script>';
   });
 
-
-
-
-
     /*--------------------
-    autopストップ
+    newsの作成
     --------------------*/
+    function create_post_type_news() {
+        register_post_type('news',
+            array(
+                'labels' => array(
+                    'name' => __('News'),
+                    'singular_name' => __('News')
+                ),
+                'public' => true,
+                'has_archive' => true,
+                'supports' => array('title', 'editor', 'thumbnail'),
+            )
+        );
+    }
+    add_action('init', 'create_post_type_news');
+
+    add_theme_support('post-thumbnails');
