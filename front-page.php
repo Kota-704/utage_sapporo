@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/components/aside/aside.css" />
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/components/component_events/component_events.css" />
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/components/component_news/component_news.css" />
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/components/component_access/component_access.css" />
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/components/footer/footer.css" />
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/style.css" />
     <link
       rel="stylesheet"
@@ -64,6 +66,16 @@
           <h2 class="event_top_title oswald_B">NEWS</h2>
           <?php get_template_part('components/component_news/component_news'); ?>
         </div>
+      </section>
+
+      <section class="vip flex">
+        <h2 class="section_title oswald_M">VIP</h2>
+      </section>
+
+      <section class="access">
+        <?php
+          get_template_part('components/component_access/component_access');
+        ?>
       </section>
 
     </main>

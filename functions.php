@@ -75,3 +75,16 @@
     add_action('init', 'create_post_type_news');
 
     add_theme_support('post-thumbnails');
+
+
+    /*--------------------
+    autopストップ
+    --------------------*/
+
+    function disable_wpautop_for_events($content) {
+    if (get_post_type() === 'events') {
+        remove_filter('the_content', 'wpautop');
+    }
+    return $content;
+}
+add_filter('the_content', 'disable_wpautop_for_events', 9);

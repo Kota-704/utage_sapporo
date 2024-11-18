@@ -189,4 +189,16 @@ news
   top: -50px;
 }
 
+/*--------------------
+vip
+--------------------*/
+.vip {
+  align-items: center;
+  background-image: url(../img/backgrounds/vip_background.png);
+  background-size: cover;
+  height: 455px;
+  justify-content: center;
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
