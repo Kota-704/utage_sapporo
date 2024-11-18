@@ -21,5 +21,10 @@
 /*--------------------
 footer
 --------------------*/
+.footer {
+  background-image: url("../../assets/img/backgrounds/footer_background.png");
+  background-size: cover;
+  height: 273px;
+}
 
 /*# sourceMappingURL=footer.css.map */
