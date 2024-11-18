@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@import "../../assets/scss/variables.scss";
+
+/*--------------------
+access
+--------------------*/
+.access {
+  background-color: $deep_black;
+  padding-bottom: 73px;
+  padding-top: 70px;
+}
+
+.access_layout {
+  align-items: center;
+  gap: 36px;
+  justify-content: center;
+  margin-top: 46px;
+}
+
+.access_right_contents {
+  color: $pure_white;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+}
+
+.access_contact_link {
+  @include button_link($pure_white, 402px);
+}
