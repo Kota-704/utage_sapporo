@@ -10,3 +10,23 @@ footer
   background-size: cover;
   height: 273px;
 }
+
+.footer .address {
+  color: $pure_white;
+  font-size: 14px;
+  padding-top: 87px;
+}
+
+.footer .link_container {
+  align-items: center;
+  flex-direction: row;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 46px;
+}
+
+.copyright {
+  color: $pure_white;
+  display: block;
+  margin-top: 38px;
+}
