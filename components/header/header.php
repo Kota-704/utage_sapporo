@@ -9,23 +9,23 @@
       <nav class="header_nav">
         <ul class="header_nav_container flex oswald_B">
           <li class="header_list">
-            <a href="#" class="header_link">ABOUT</a>
+            <a href="<?php echo esc_url(home_url("/#about")); ?>" class="header_link">ABOUT</a>
           </li>
           <li class="header_list">
-            <a href="#" class="header_link">PICK UP EVENTS</a>
+            <a href="<?php echo esc_url(home_url("/#events")); ?>" class="header_link">PICK UP EVENTS</a>
           </li>
           <li class="header_list">
-            <a href="#" class="header_link">NEWS</a>
+            <a href="<?php echo esc_url(home_url("/#news")); ?>" class="header_link">NEWS</a>
           </li>
           <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/logo/logo_B_white.png" alt="UTAGE SAPPORO" class="header_logo" />
           <li class="header_list">
-            <a href="#" class="header_link">CAMPAIGN</a>
+            <a href="<?php echo esc_url(home_url("/#campaign")); ?>" class="header_link">CAMPAIGN</a>
           </li>
           <li class="header_list">
-            <a href="#" class="header_link">VIP</a>
+            <a href="<?php echo esc_url(home_url("/#vip")); ?>" class="header_link">VIP</a>
           </li>
           <li class="header_list">
-            <a href="#" class="header_link">ACCESS</a>
+            <a href="<?php echo esc_url(home_url("/#access")); ?>" class="header_link">ACCESS</a>
           </li>
         </ul>
       </nav>
@@ -43,34 +43,34 @@
     <div class="right_content">
       <ul class="hamburger_list_container grid oswald_B">
         <li class="hamburger_list">
-          <a href="#about" class="hamburger_link">ABOUT</a>
+          <a href="<?php echo esc_url(home_url("/#about")); ?>" class="hamburger_link">ABOUT</a>
         </li>
         <li class="hamburger_list">
-          <a href="" class="hamburger_link">PICK UP EVENTS</a>
+          <a href="<?php echo esc_url(home_url("/#events")); ?>" class="hamburger_link">PICK UP EVENTS</a>
         </li>
         <li class="hamburger_list">
           <a href="" class="hamburger_link">SCHEDULE</a>
         </li>
         <li class="hamburger_list">
-          <a href="" class="hamburger_link">NEWS</a>
+          <a href="<?php echo esc_url(home_url("/#news")); ?>" class="hamburger_link">NEWS</a>
         </li>
         <li class="hamburger_list">
-          <a href="" class="hamburger_link">CAMPAIGN</a>
+          <a href="<?php echo esc_url(home_url("/#campaign")); ?>" class="hamburger_link">CAMPAIGN</a>
         </li>
         <li class="hamburger_list">
           <a href="" class="hamburger_link">FLOOR</a>
         </li>
         <li class="hamburger_list">
-          <a href="" class="hamburger_link">GAALLERY</a>
+          <a href="" class="hamburger_link">GALLERY</a>
         </li>
         <li class="hamburger_list">
-          <a href="" class="hamburger_link">VIP</a>
+          <a href="<?php echo esc_url(home_url("/#vip")); ?>" class="hamburger_link">VIP</a>
         </li>
         <li class="hamburger_list">
           <a href="" class="hamburger_link">RENTAL</a>
         </li>
         <li class="hamburger_list">
-          <a href="" class="hamburger_link">ACCESS</a>
+          <a href="<?php echo esc_url(home_url("/#access")); ?>" class="hamburger_link">ACCESS</a>
         </li>
       </ul>
       <div class="link_button_container flex oswald_R">

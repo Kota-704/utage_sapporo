@@ -1,4 +1,4 @@
-<section class="campaign">
+<section id="campaign" class="campaign">
   <h2 class="campaign_top_title oswald_B">CAMPAIGN</h2>
 
   <div class="swiper swiper_campaign">

@@ -50,7 +50,7 @@
         </p>
       </section>
 
-      <section class="events">
+      <section id="events" class="events">
         <div class="events_container">
           <h2 class="event_top_title oswald_B">PICK UP EVENTS</h2>
           <?php get_template_part('components/component_events/component_events'); ?>
@@ -61,18 +61,18 @@
         get_template_part('components/campaign/campaign');
       ?>
 
-      <section class="news">
+      <section id="news" class="news">
         <div class="news_container">
           <h2 class="event_top_title oswald_B">NEWS</h2>
           <?php get_template_part('components/component_news/component_news'); ?>
         </div>
       </section>
 
-      <section class="vip flex">
+      <section id="vip" class="vip flex">
         <h2 class="section_title oswald_M">VIP</h2>
       </section>
 
-      <section class="access">
+      <section id="access" class="access">
         <?php
           get_template_part('components/component_access/component_access');
         ?>
