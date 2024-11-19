@@ -41,7 +41,7 @@
       </section>
 
       <section id="about" class="about">
-        <p class="about_text noto_R">
+        <p class="about_text noto_R fade-in">
           それも今何しろこの努力めというものの所より叱るましだろ。<br /><br />
 
           できるだけ昔に観念屋はかつてそんな講演たあっともになるのでならましがも努力立っうたから、たったには勤まりたありでしで。金力がしなら方はけっして時間からそのうちだろでだ。<br /><br />
@@ -51,7 +51,7 @@
       </section>
 
       <section id="events" class="events">
-        <div class="events_container">
+        <div class="events_container fade-in">
           <h2 class="event_top_title oswald_B">PICK UP EVENTS</h2>
           <?php get_template_part('components/component_events/component_events'); ?>
         </div>
@@ -62,7 +62,7 @@
       ?>
 
       <section id="news" class="news">
-        <div class="news_container">
+        <div class="news_container fade-in">
           <h2 class="event_top_title oswald_B">NEWS</h2>
           <?php get_template_part('components/component_news/component_news'); ?>
         </div>
