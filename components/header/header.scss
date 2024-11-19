@@ -175,7 +175,7 @@ hamburger_content
 }
 
 .link_button {
-  @include button_link($pure_white, 270px);
+  @include button_link($pure_white, $pure_white, $deep_black, 270px);
 }
 
 .sns_link_container {

@@ -92,6 +92,10 @@ textarea {
   display: grid;
 }
 
+.txt_center {
+  text-align: center;
+}
+
 .noto_B {
   font-family: "Noto Sans JP Bold", sans-serif;
 }
@@ -112,6 +116,10 @@ textarea {
 .oswald_M {
   font-family: Oswald, sans-serif;
   font-weight: 500;
+}
+
+.m1c {
+  font-family: "M Plus 1c", sans-serif;
 }
 
 .oswald_R {

@@ -47,7 +47,12 @@ access
   border-radius: 5px;
   padding: 14px 18px;
   text-align: center;
+  transition: all 0.3s ease;
   width: 402px;
+}
+.access_contact_link:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /*# sourceMappingURL=component_access.css.map */

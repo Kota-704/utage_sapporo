@@ -194,7 +194,12 @@ hamburger_content
   border-radius: 5px;
   padding: 14px 18px;
   text-align: center;
+  transition: all 0.3s ease;
   width: 270px;
+}
+.link_button:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .sns_link_container {

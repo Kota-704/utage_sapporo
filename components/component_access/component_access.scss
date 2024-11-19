@@ -26,5 +26,5 @@ access
 }
 
 .access_contact_link {
-  @include button_link($pure_white, 402px);
+  @include button_link($pure_white, $pure_white, $deep_black, 402px);
 }
