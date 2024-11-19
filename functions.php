@@ -82,9 +82,18 @@
     --------------------*/
 
     function disable_wpautop_for_events($content) {
-    if (get_post_type() === 'events') {
-        remove_filter('the_content', 'wpautop');
+        if (get_post_type() === 'events') {
+            remove_filter('the_content', 'wpautop');
+        }
+        return $content;
     }
-    return $content;
-}
-add_filter('the_content', 'disable_wpautop_for_events', 9);
+    add_filter('the_content', 'disable_wpautop_for_events', 9);
+
+    /*--------------------
+     wp_footer() のフックを無効化
+    --------------------*/
+
+    function remove_footer_credit() {
+        remove_action('wp_footer', 'wp_default_footer');
+    }
+    add_action('init', 'remove_footer_credit');

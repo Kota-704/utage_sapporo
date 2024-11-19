@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-  d;
 });
 
 /*--------------------
@@ -36,12 +35,12 @@ document.addEventListener("DOMContentLoaded", () => {
     (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("visible"); // 要素が画面に入ったらクラスを追加
-          observer.unobserve(entry.target); // 監視を解除
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
         }
       });
     },
-    { threshold: 0.1 } // 10%見えたらトリガー
+    { threshold: 0.3 }
   );
 
   fadeInElements.forEach((element) => observer.observe(element));
