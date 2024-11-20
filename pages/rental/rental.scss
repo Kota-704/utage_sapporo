@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@import "../../assets/scss/variables.scss";
+
+/*--------------------
+rental
+--------------------*/
+.rental_title {
+  @include cut_out_letters2($yellow, 65px);
+  padding-top: 42px;
+  text-align: center;
+}
