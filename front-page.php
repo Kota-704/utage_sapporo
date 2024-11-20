@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="<?php bloginfo( 'description' ); ?>" />
-    <meta name="facebook-domain-verification" content="wvrn9f8q9k536orprilqvc5hh676eg" />
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/base.css" />
-    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/components/header/header.css" />
-    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/components/aside/aside.css" />
-    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/components/component_events/component_events.css" />
-    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/components/component_news/component_news.css" />
-    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/components/component_access/component_access.css" />
-    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/components/footer/footer.css" />
-    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <title><?php echo esc_html( wp_get_document_title() ); ?></title>
-    <?php wp_head(); ?>
-  </head>
-  <body <?php body_class(); ?>>
-
-    <?php get_template_part('components/header/header'); ?>
+<?php get_template_part('components/header/header'); ?>
 
     <main>
       <section class="fv">
@@ -82,9 +56,3 @@
     <?php get_template_part('components/aside/aside'); ?>
 
     <?php get_template_part('components/footer/footer'); ?>
-    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/script.js"></script>
-    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/components/header/header.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <?php wp_footer(); ?>
-  </body>
-</html>
