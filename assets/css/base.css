@@ -34,6 +34,7 @@ html {
 }
 
 body {
+  background-attachment: fixed;
   background-image: url("../img/backgrounds/page_background.png");
   background-repeat: repeat-y;
   background-size: cover;
@@ -59,6 +60,10 @@ input,
 textarea {
   box-sizing: border-box;
   width: 100%;
+}
+
+.page-template {
+  background-color: rgba(5, 5, 5, 0.8);
 }
 
 .wrapper {
@@ -155,7 +160,7 @@ animation
 .fade-in {
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
+  transition: opacity 0.8s ease-out, transform 1s ease-out;
 }
 
 .fade-in.visible {

@@ -60,6 +60,12 @@ $yellow: #feeb00;
   text-shadow: 0px 0px 5px $text_shadow;
 }
 
+@mixin cut_out_letters2($color, $font_size) {
+  color: transparent;
+  font-size: $font_size;
+  -webkit-text-stroke: $color 1px;
+}
+
 @mixin section_container {
   border: 1px solid $yellow;
   border-radius: 20px;
