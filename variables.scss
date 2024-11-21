@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+// 変数定義
+$black: #050505;
+$blue: #005bac;
+$dark_blue: #23254c;
+$deep_black: #000000;
+$gray: #b4b4b4;
+$pure_white: #ffffff;
+$yellow: #feeb00;
+
+@font-face {
+  font-family: "Noto Sans JP Bold";
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/NotoSansJP-Bold.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans JP Medium";
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/NotoSansJP-Medium.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans JP Regular";
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/NotoSansJP-Regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "M Plus 1c";
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/MPLUSRounded1c-Regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/Oswald-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@mixin button_link($color, $hover_bg_color, $hover_color, $width) {
+  border: 1px solid $color;
+  color: $color;
+  border-radius: 5px;
+  padding: 14px 18px;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: $width;
+
+  &:hover {
+    background-color: $hover_bg_color;
+    color: $hover_color;
+  }
+}
+
+@mixin cut_out_letters($color, $font_size, $text_shadow) {
+  color: $color;
+  font-size: $font_size;
+  text-shadow: 0px 0px 5px $text_shadow;
+}
+
+@mixin section_container {
+  border: 1px solid $yellow;
+  border-radius: 20px;
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 120px 70px;
+  position: relative;
+
+  &::before,
+  &::after {
+    background-color: $black;
+    content: "";
+    position: absolute;
+    width: 5px;
+    z-index: 10;
+  }
+
+  &::before {
+    height: 68px;
+    left: -3px;
+    top: 84px;
+  }
+
+  &::after {
+    height: 68px;
+    right: -3px;
+    bottom: 84px;
+  }
+}

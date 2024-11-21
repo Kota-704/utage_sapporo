@@ -25,8 +25,52 @@ rental
   color: transparent;
   font-size: 65px;
   -webkit-text-stroke: #feeb00 1px;
-  padding-top: 42px;
+  padding-top: 182px;
+  position: relative;
   text-align: center;
+  z-index: 10;
+}
+
+.rental_image {
+  margin: 44px auto 0;
+  max-width: 1000px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+/*--------------------
+reservation
+--------------------*/
+.reservation {
+  background-color: #050505;
+  margin-top: -625px;
+  padding-top: 625px;
+}
+
+.section_title {
+  margin-top: 70px;
+}
+
+.reservation_text {
+  color: #ffffff;
+  margin-top: 24px;
+}
+
+.reservation_link {
+  border: 1px solid #feeb00;
+  color: #feeb00;
+  border-radius: 5px;
+  padding: 14px 18px;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 349px;
+  display: block;
+  margin: 72px auto 97px;
+}
+.reservation_link:hover {
+  background-color: #050505;
+  color: #feeb00;
 }
 
 /*# sourceMappingURL=rental.css.map */

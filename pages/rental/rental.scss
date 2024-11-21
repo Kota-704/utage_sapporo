@@ -7,6 +7,41 @@ rental
 --------------------*/
 .rental_title {
   @include cut_out_letters2($yellow, 65px);
-  padding-top: 42px;
+  padding-top: 182px;
+  position: relative;
   text-align: center;
+  z-index: 10;
+}
+
+.rental_image {
+  margin: 44px auto 0;
+  max-width: 1000px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+/*--------------------
+reservation
+--------------------*/
+
+.reservation {
+  background-color: $black;
+  margin-top: -625px;
+  padding-top: 625px;
+}
+
+.section_title {
+  margin-top: 70px;
+}
+
+.reservation_text {
+  color: $pure_white;
+  margin-top: 24px;
+}
+
+.reservation_link {
+  @include button_link($yellow, $black, $yellow, 349px);
+  display: block;
+  margin: 72px auto 97px;
 }
