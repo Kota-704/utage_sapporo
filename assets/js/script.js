@@ -3,30 +3,42 @@
 --------------------*/
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".header_link, .hamburger_link").forEach((link) => {
+  document.querySelectorAll("a[href^='#']").forEach((link) => {
     link.addEventListener("click", function (e) {
       const href = this.getAttribute("href");
+      const targetId = href.startsWith("#") ? href.slice(1) : null;
+      const targetElement = targetId ? document.getElementById(targetId) : null;
 
-      if (href && href.includes("#")) {
+      if (targetElement) {
         e.preventDefault();
+        const headerHeight =
+          document.querySelector(".header_nav")?.offsetHeight || 0;
+        const targetPosition = targetElement.offsetTop - headerHeight;
 
-        const targetId = href.split("#")[1];
-        const targetElement = document.getElementById(targetId);
-
-        if (targetElement) {
-          const headerHeight =
-            document.querySelector(".header_nav").offsetHeight;
-          const targetPosition = targetElement.offsetTop - headerHeight;
-
-          window.scrollTo({
-            top: targetPosition,
-            behavior: "smooth",
-          });
-        }
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth",
+        });
       }
-      // ハッシュリンク以外の場合は通常のページ遷移を許可
     });
   });
+
+  const hash = window.location.hash;
+  if (hash) {
+    const targetElement = document.querySelector(hash);
+    if (targetElement) {
+      const headerHeight =
+        document.querySelector(".header_nav")?.offsetHeight || 0;
+      const targetPosition = targetElement.offsetTop - headerHeight;
+
+      setTimeout(() => {
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth",
+        });
+      }, 100);
+    }
+  }
 });
 
 /*--------------------
