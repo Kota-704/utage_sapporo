@@ -63,10 +63,11 @@ reservation
   border-radius: 5px;
   padding: 14px 18px;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
   width: 349px;
   display: block;
   margin: 72px auto 97px;
+  transition: opacity 0.8s ease-out, transform 1s ease-out;
 }
 .reservation_link:hover {
   background-color: #050505;
