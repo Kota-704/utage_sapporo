@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@import "../../assets/scss/variables.scss";
+
+/*--------------------
+recruit
+--------------------*/
+.recruit_title {
+  @include cut_out_letters2($yellow, 65px);
+  padding-top: 182px;
+  position: relative;
+  text-align: center;
+  z-index: 10;
+}
+
+.top_text {
+  color: $pure_white;
+  margin-top: 26px;
+}
+
+.recruit_top_layout {
+  gap: 55px;
+  justify-content: center;
+}
+
+.recruit_top_container {
+  color: $pure_white;
+  margin-top: 69px;
+  max-width: 330px;
+  width: 100%;
+}
+
+.job_heading {
+  font-size: 30px;
+  margin-top: 34px;
+}
+
+.recruit_image {
+  width: 100%;
+}
+
+.horizon {
+  background-color: $yellow;
+  display: block;
+  height: 1px;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.job_text {
+  margin-top: 14px;
+}
+
+.dancer_heading {
+  line-height: 29px;
+  margin-top: 14px;
+}
+
+.supplement {
+  font-size: 16px;
+}

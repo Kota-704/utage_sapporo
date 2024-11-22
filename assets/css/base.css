@@ -76,7 +76,8 @@ textarea {
   width: 100%;
 }
 
-.page-template {
+.page-template,
+.page-template-default {
   background-color: #050505;
 }
 

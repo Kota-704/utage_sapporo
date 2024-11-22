@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Noto Sans JP Bold";
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/NotoSansJP-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans JP Medium";
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/NotoSansJP-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans JP Regular";
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/NotoSansJP-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "M Plus 1c";
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+}
+/*--------------------
+recruit
+--------------------*/
+.recruit_title {
+  color: transparent;
+  font-size: 65px;
+  -webkit-text-stroke: #feeb00 1px;
+  padding-top: 182px;
+  position: relative;
+  text-align: center;
+  z-index: 10;
+}
+
+.top_text {
+  color: #ffffff;
+  margin-top: 26px;
+}
+
+.recruit_top_layout {
+  gap: 55px;
+  justify-content: center;
+}
+
+.recruit_top_container {
+  color: #ffffff;
+  margin-top: 69px;
+  max-width: 330px;
+  width: 100%;
+}
+
+.job_heading {
+  font-size: 30px;
+  margin-top: 34px;
+}
+
+.recruit_image {
+  width: 100%;
+}
+
+.horizon {
+  background-color: #feeb00;
+  display: block;
+  height: 1px;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.job_text {
+  margin-top: 14px;
+}
+
+.dancer_heading {
+  line-height: 29px;
+  margin-top: 14px;
+}
+
+.supplement {
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=recruit.css.map */
