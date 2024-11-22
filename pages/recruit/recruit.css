@@ -78,4 +78,20 @@ recruit
   font-size: 16px;
 }
 
+.job_description_container {
+  border: 1px solid #feeb00;
+  border-radius: 15px;
+  color: #ffffff;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.job_description_inner {
+  padding: 0 48px;
+}
+
+.job_description_heading {
+  font-size: 30px;
+}
+
 /*# sourceMappingURL=recruit.css.map */

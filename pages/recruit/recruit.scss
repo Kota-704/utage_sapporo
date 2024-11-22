@@ -59,3 +59,19 @@ recruit
 .supplement {
   font-size: 16px;
 }
+
+.job_description_container {
+  border: 1px solid $yellow;
+  border-radius: 15px;
+  color: $pure_white;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.job_description_inner {
+  padding: 0 48px;
+}
+
+.job_description_heading {
+  font-size: 30px;
+}

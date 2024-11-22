@@ -42,6 +42,11 @@
             </p>
           </div>
         </div>
+        <div class="job_description_container">
+          <div class="job_description_inner">
+            <h3 class="job_description_heading noto_B txt_center">UTAGE STAFF</h3>
+          </div>
+        </div>
     </div>
   </section>
   <section class="reservation">
