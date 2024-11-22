@@ -20,6 +20,8 @@
     <!-- ページごとのCSS -->
     <?php elseif (is_page('rental')) : ?>
       <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/pages/rental/rental.css">
+    <?php elseif (is_page('recruit')) : ?>
+      <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/pages/recruit/recruit.css">
     <?php endif; ?>
     <link
       rel="stylesheet"
@@ -108,7 +110,7 @@
         </li>
       </ul>
       <div class="link_button_container flex oswald_R">
-        <a href="" class="link_button">RECRUIT</a>
+        <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="link_button">RECRUIT</a>
         <a href="" class="link_button">CONTANCT</a>
       </div>
       <div class="sns_link_container flex">
