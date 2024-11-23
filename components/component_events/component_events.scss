@@ -16,6 +16,8 @@ events
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  max-width: 300px;
+  width: 100%;
 }
 
 .event_title {
@@ -27,8 +29,6 @@ events
   color: $pure_white;
   font-size: 14px;
   margin-top: 8px;
-  max-width: 300px;
-  width: 100%;
 }
 
 .no_events {
