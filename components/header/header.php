@@ -85,7 +85,9 @@
           <a href="<?php echo esc_url(home_url("/#events")); ?>" class="hamburger_link">PICK UP EVENTS</a>
         </li>
         <li class="hamburger_list">
-          <a href="" class="hamburger_link">SCHEDULE</a>
+          <a href="<?php echo esc_url(get_post_type_archive_link('schedule')); ?>" class="hamburger_link">
+            SCHEDULE
+          </a>
         </li>
         <li class="hamburger_list">
           <a href="<?php echo esc_url(home_url("/#news")); ?>" class="hamburger_link">NEWS</a>
