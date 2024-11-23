@@ -18,6 +18,10 @@
   font-family: "Oswald";
   src: url("/wp-content/themes/utage_sapporo/assets/fonts/Oswald-VariableFont_wght.ttf") format("truetype");
 }
+body {
+  height: initial;
+}
+
 /*--------------------
 recruit
 --------------------*/
@@ -82,6 +86,7 @@ recruit
   border: 1px solid #feeb00;
   border-radius: 15px;
   color: #ffffff;
+  margin: 100px auto 0;
   max-width: 1100px;
   width: 100%;
 }
@@ -92,6 +97,57 @@ recruit
 
 .job_description_heading {
   font-size: 30px;
+  padding: 20px;
+}
+
+.job_detail {
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.detail_heading {
+  padding: 56px;
+  width: 25%;
+}
+
+.detail_text {
+  padding: 56px;
+  width: 75%;
+}
+
+.detail_text_layout {
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+/*--------------------
+entry
+--------------------*/
+.section_title {
+  margin-top: 102px;
+}
+
+.entry_text {
+  color: #ffffff;
+  margin-top: 24px;
+}
+
+.entry_link {
+  border: 1px solid #feeb00;
+  color: #feeb00;
+  border-radius: 5px;
+  padding: 14px 18px;
+  text-align: center;
+  transition: background-color 0.6s ease, color 0.6s ease;
+  width: 349px;
+  display: block;
+  margin: 72px auto 97px;
+  transition: opacity 0.8s ease-out, transform 0.3s ease-out, background-color 0.5s ease, color 0.5s ease;
+}
+.entry_link:hover {
+  background-color: #050505;
+  color: #feeb00;
 }
 
 /*# sourceMappingURL=recruit.css.map */
