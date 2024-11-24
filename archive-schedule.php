@@ -1,14 +1,7 @@
 <?php
-  get_template_part('components/header/header');
-  get_template_part('components/aside/aside');
+get_template_part('components/header/header');
+get_template_part('components/aside/aside');
 
-  $term = get_queried_object();
-  $category_image = get_term_meta($term->term_id, 'category_image', true);
-  if ($category_image) {
-    echo '<img src="' . esc_url($category_image) . '" alt="' . esc_attr($term->name) . '">';
-  }
-  ?>
+  require_once get_template_directory() . '/pages/schedule/schedule.php';
 
-<?php
-  get_template_part('components/footer/footer');
-?>
+get_template_part('components/footer/footer');

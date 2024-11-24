@@ -157,19 +157,35 @@
     archive-scheduleにアイキャッチ画像を設定
     --------------------*/
 
-    add_action('category_edit_form_fields', 'add_category_image_field');
-    add_action('category_add_form_fields', 'add_category_image_field');
-    function add_category_image_field($tag) {
-    $image_id = get_term_meta($tag->term_id, 'category_image', true);
-    ?>
-    <tr class="form-field">
-        <th scope="row" valign="top">
-        <label for="category-image"><?php _e('Category Image'); ?></label>
-        </th>
-        <td>
-        <input type="text" name="category_image" id="category-image" value="<?php echo esc_attr($image_id); ?>" />
-        <p class="description"><?php _e('Enter image URL or media ID.'); ?></p>
-        </td>
-    </tr>
-    <?php
+    // 管理画面にオプションページを追加
+    function schedule_add_admin_page() {
+        add_menu_page(
+            'Schedule Options',
+            'Schedule Options',
+            'manage_options',
+            'schedule-options',
+            'schedule_options_page',
+            '',
+            110
+        );
+    }
+    add_action('admin_menu', 'schedule_add_admin_page');
+
+    // オプションページのコールバック
+    function schedule_options_page() {
+        if (isset($_POST['schedule_archive_image'])) {
+            update_option('schedule_archive_image', sanitize_text_field($_POST['schedule_archive_image']));
+        }
+
+        $archive_image = get_option('schedule_archive_image', '');
+        ?>
+        <div class="wrap">
+            <h1>Schedule Archive Image</h1>
+            <form method="post">
+                <label for="schedule_archive_image">アーカイブ画像 URL:</label>
+                <input type="text" id="schedule_archive_image" name="schedule_archive_image" value="<?php echo esc_attr($archive_image); ?>" style="width:100%;">
+                <button type="submit" class="button button-primary">保存</button>
+            </form>
+        </div>
+        <?php
     }
