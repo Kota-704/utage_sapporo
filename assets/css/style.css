@@ -82,42 +82,79 @@ about
 events
 --------------------*/
 .events {
-  background-color: #050505;
   padding: 168px;
   position: relative;
 }
 
 .events_container {
-  border: 1px solid #feeb00;
-  border-radius: 20px;
   margin: 0 auto;
   max-width: 1140px;
   padding: 120px 70px;
   position: relative;
 }
-.events_container::before, .events_container::after {
-  background-color: #050505;
-  content: "";
+
+.frame_left {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  max-width: 525px;
   position: absolute;
-  width: 5px;
-  z-index: 10;
+  width: 100%;
 }
-.events_container::before {
-  height: 68px;
-  left: -3px;
-  top: 84px;
+.frame_left::before, .frame_left::after {
+  content: "";
+  left: 0;
+  max-width: 525px;
+  position: absolute;
+  width: 100%;
 }
-.events_container::after {
-  height: 68px;
-  right: -3px;
-  bottom: 84px;
+.frame_left::before {
+  border-left: 1px solid #feeb00;
+  border-top: 1px solid #feeb00;
+  border-radius: 20px 0 0 0;
+  height: 15%;
+  top: 0;
+}
+.frame_left::after {
+  border-bottom: 1px solid #feeb00;
+  border-left: 1px solid #feeb00;
+  border-radius: 0 0 0 20px;
+  bottom: 0;
+  height: 70%;
+}
+
+.frame_right {
+  bottom: 0;
+  height: calc(100% - 100px);
+  max-width: 620px;
+  right: 0;
+  position: absolute;
+  width: 100%;
+}
+.frame_right::before, .frame_right::after {
+  content: "";
+  max-width: 620px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+.frame_right::before {
+  border-right: 1px solid #feeb00;
+  height: 70%;
+  top: 0;
+}
+.frame_right::after {
+  border-bottom: 1px solid #feeb00;
+  border-right: 1px solid #feeb00;
+  border-radius: 0 0 20px 0;
+  bottom: 0;
+  height: 15%;
 }
 
 .event_top_title {
-  color: #050505;
+  color: transparent;
   font-size: 85px;
-  text-shadow: 0px 0px 5px #feeb00;
-  background-color: #050505;
+  -webkit-text-stroke: #feeb00 1px;
   padding-bottom: 22px;
   padding-left: 40px;
   position: absolute;
@@ -145,41 +182,79 @@ campaign
 news
 --------------------*/
 .news {
-  background-color: #050505;
   padding: 168px;
   position: relative;
 }
 
 .news_container {
-  border: 1px solid #feeb00;
-  border-radius: 20px;
   margin: 0 auto;
   max-width: 1140px;
   padding: 120px 70px;
   position: relative;
 }
-.news_container::before, .news_container::after {
-  background-color: #050505;
-  content: "";
+
+.news_container .frame_left {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  max-width: 890px;
   position: absolute;
-  width: 5px;
-  z-index: 10;
+  width: 100%;
 }
-.news_container::before {
-  height: 68px;
-  left: -3px;
-  top: 84px;
+.news_container .frame_left::before, .news_container .frame_left::after {
+  content: "";
+  left: 0;
+  max-width: 890px;
+  position: absolute;
+  width: 100%;
 }
-.news_container::after {
-  height: 68px;
-  right: -3px;
-  bottom: 84px;
+.news_container .frame_left::before {
+  border-left: 1px solid #feeb00;
+  border-top: 1px solid #feeb00;
+  border-radius: 20px 0 0 0;
+  height: 15%;
+  top: 0;
+}
+.news_container .frame_left::after {
+  border-bottom: 1px solid #feeb00;
+  border-left: 1px solid #feeb00;
+  border-radius: 0 0 0 20px;
+  bottom: 0;
+  height: 70%;
+}
+
+.news_container .frame_right {
+  bottom: 0;
+  height: calc(100% - 100px);
+  max-width: 420px;
+  right: 0;
+  position: absolute;
+  width: 100%;
+}
+.news_container .frame_right::before, .news_container .frame_right::after {
+  content: "";
+  max-width: 420px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+.news_container .frame_right::before {
+  border-right: 1px solid #feeb00;
+  height: 70%;
+  top: 0;
+}
+.news_container .frame_right::after {
+  border-bottom: 1px solid #feeb00;
+  border-right: 1px solid #feeb00;
+  border-radius: 0 0 20px 0;
+  bottom: 0;
+  height: 15%;
 }
 
 .news_top_title {
-  color: #050505;
+  color: transparent;
   font-size: 85px;
-  text-shadow: 0px 0px 5px #feeb00;
+  -webkit-text-stroke: #feeb00 1px;
   background-color: #050505;
   padding-bottom: 22px;
   padding-left: 40px;

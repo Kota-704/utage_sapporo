@@ -66,9 +66,73 @@ $yellow: #feeb00;
   -webkit-text-stroke: $color 1px;
 }
 
+@mixin frame_left($width) {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  max-width: $width;
+  position: absolute;
+  width: 100%;
+
+  &::before,
+  &::after {
+    content: "";
+    left: 0;
+    max-width: $width;
+    position: absolute;
+    width: 100%;
+  }
+
+  &::before {
+    border-left: 1px solid $yellow;
+    border-top: 1px solid $yellow;
+    border-radius: 20px 0 0 0;
+    height: 15%;
+    top: 0;
+  }
+
+  &::after {
+    border-bottom: 1px solid $yellow;
+    border-left: 1px solid $yellow;
+    border-radius: 0 0 0 20px;
+    bottom: 0;
+    height: 70%;
+  }
+}
+
+@mixin frame_right($width) {
+  bottom: 0;
+  height: calc(100% - 100px);
+  max-width: $width;
+  right: 0;
+  position: absolute;
+  width: 100%;
+
+  &::before,
+  &::after {
+    content: "";
+    max-width: $width;
+    position: absolute;
+    right: 0;
+    width: 100%;
+  }
+
+  &::before {
+    border-right: 1px solid $yellow;
+    height: 70%;
+    top: 0;
+  }
+
+  &::after {
+    border-bottom: 1px solid $yellow;
+    border-right: 1px solid $yellow;
+    border-radius: 0 0 20px 0;
+    bottom: 0;
+    height: 15%;
+  }
+}
+
 @mixin section_container {
-  border: 1px solid $yellow;
-  border-radius: 20px;
   margin: 0 auto;
   max-width: 1140px;
   padding: 120px 70px;

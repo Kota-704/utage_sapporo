@@ -26,6 +26,8 @@
 
       <section id="events" class="events">
         <div class="events_container fade-in">
+          <span class="frame_left"></span>
+          <span class="frame_right"></span>
           <h2 class="event_top_title oswald_B">PICK UP EVENTS</h2>
           <?php get_template_part('components/component_events/component_events'); ?>
         </div>
@@ -37,6 +39,8 @@
 
       <section id="news" class="news">
         <div class="news_container fade-in">
+          <span class="frame_left"></span>
+          <span class="frame_right"></span>
           <h2 class="event_top_title oswald_B">NEWS</h2>
           <?php get_template_part('components/component_news/component_news'); ?>
         </div>

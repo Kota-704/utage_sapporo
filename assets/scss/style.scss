@@ -70,17 +70,27 @@ events
 --------------------*/
 
 .events {
-  background-color: $black;
   padding: 168px;
   position: relative;
 }
 
 .events_container {
-  @include section_container;
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 120px 70px;
+  position: relative;
 }
+
+.frame_left {
+  @include frame_left(525px);
+}
+
+.frame_right {
+  @include frame_right(620px);
+}
+
 .event_top_title {
-  @include cut_out_letters($black, 85px, $yellow);
-  background-color: $black;
+  @include cut_out_letters2($yellow, 85px);
   padding-bottom: 22px;
   padding-left: 40px;
   position: absolute;
@@ -107,16 +117,27 @@ campaign
 news
 --------------------*/
 .news {
-  background-color: $black;
   padding: 168px;
   position: relative;
 }
 
 .news_container {
-  @include section_container;
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 120px 70px;
+  position: relative;
 }
+
+.news_container .frame_left {
+  @include frame_left(890px);
+}
+
+.news_container .frame_right {
+  @include frame_right(420px);
+}
+
 .news_top_title {
-  @include cut_out_letters($black, 85px, $yellow);
+  @include cut_out_letters2($yellow, 85px);
   background-color: $black;
   padding-bottom: 22px;
   padding-left: 40px;
