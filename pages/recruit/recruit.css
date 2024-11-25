@@ -19,7 +19,7 @@
   src: url("/wp-content/themes/utage_sapporo/assets/fonts/Oswald-VariableFont_wght.ttf") format("truetype");
 }
 body {
-  height: initial;
+  height: 100%;
 }
 
 /*--------------------
