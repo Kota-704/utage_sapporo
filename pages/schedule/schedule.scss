@@ -3,7 +3,15 @@
 @import "../../assets/scss/variables.scss";
 
 /*--------------------
-schedule
+common_settings
+--------------------*/
+
+body {
+  height: 100%;
+}
+
+/*--------------------
+schedule_top
 --------------------*/
 .archive_image_container {
   padding-top: 183px;
@@ -11,4 +19,49 @@ schedule
 
 .archive_image {
   margin: 0 auto;
+}
+
+/*--------------------
+schedule_detail
+--------------------*/
+
+.schedule_detail {
+  margin: 198px auto 0;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.schedule_list {
+  padding: 21px 0 53px 0;
+  width: 100%;
+}
+
+.schedule_list:not(:first-child) {
+  border-top: 1px solid $pure_white;
+}
+
+.schedule_item {
+  align-items: center;
+  gap: 71px;
+}
+
+.schedule_right_item {
+  color: $pure_white;
+}
+
+.schedule_date {
+  font-size: 54px;
+}
+
+.schedule_heading {
+  margin-top: 36px;
+}
+
+.schedule_guest {
+  font-size: 30px;
+  margin-top: 4px;
+}
+
+.schedule_content {
+  margin-top: 24px;
 }

@@ -181,7 +181,7 @@
         ?>
         <div class="wrap">
             <h1>スケジュールページのTOP画像を設定</h1>
-            <h2>メディア>ライブラリより、設定したい画像をアップロードしていただき、その画像のファイルパスを下記に貼り付けてください。</h2>
+            <h2>メディア>ライブラリより、設定したい画像をアップロードし、その画像のファイルパスを下記に貼り付けてください。</h2>
             <form method="post">
                 <label for="schedule_archive_image">スケジュールTOP画像 URL:</label>
                 <input type="text" id="schedule_archive_image" name="schedule_archive_image" value="<?php echo esc_attr($archive_image); ?>" style="width:100%;">
