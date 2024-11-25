@@ -22,6 +22,8 @@
       <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/pages/rental/rental.css">
     <?php elseif (is_page('recruit')) : ?>
       <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/pages/recruit/recruit.css">
+    <?php elseif (is_page('contact')) : ?>
+      <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/pages/contact/contact.css">
     <?php elseif (is_post_type_archive('schedule')) : ?>
       <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/pages/schedule/schedule.css">
     <?php endif; ?>
@@ -115,7 +117,7 @@
       </ul>
       <div class="link_button_container flex oswald_R">
         <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="link_button">RECRUIT</a>
-        <a href="" class="link_button">CONTANCT</a>
+        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="link_button">CONTANCT</a>
       </div>
       <div class="sns_link_container flex">
         <a href="" class="sns_link">
