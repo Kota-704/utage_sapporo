@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@import "../../assets/scss/variables.scss";
+
+body {
+  height: 100%;
+}
+
+/*--------------------
+contact
+--------------------*/
+
+.contact_title {
+  @include cut_out_letters2($yellow, 65px);
+  padding-top: 182px;
+  position: relative;
+  text-align: center;
+  z-index: 10;
+}
+
+.page_content {
+  color: $pure_white;
+}
+
+input,
+textarea {
+  border: 1px solid $pure_white;
+}
