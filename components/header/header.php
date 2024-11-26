@@ -24,6 +24,8 @@
       <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/pages/recruit/recruit.css">
     <?php elseif (is_page('contact')) : ?>
       <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/pages/contact/contact.css">
+    <?php elseif (is_page('gallery')) : ?>
+      <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/pages/gallery/gallery.css">
     <?php elseif (is_post_type_archive('schedule')) : ?>
       <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/pages/schedule/schedule.css">
     <?php endif; ?>
@@ -103,7 +105,7 @@
           <a href="" class="hamburger_link">FLOOR</a>
         </li>
         <li class="hamburger_list">
-          <a href="" class="hamburger_link">GALLERY</a>
+          <a href="<?php echo esc_url(home_url('/gallery')); ?>" class="hamburger_link">GALLERY</a>
         </li>
         <li class="hamburger_list">
           <a href="<?php echo esc_url(home_url("/#vip")); ?>" class="hamburger_link">VIP</a>
