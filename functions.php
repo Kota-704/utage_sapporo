@@ -81,13 +81,13 @@
     autopストップ
     --------------------*/
 
-    function disable_wpautop_for_events($content) {
-        if (get_post_type() === 'events') {
-            remove_filter('the_content', 'wpautop');
-        }
+    function disable_wpautop_globally($content) {
+        remove_filter('the_content', 'wpautop');
         return $content;
     }
-    add_filter('the_content', 'disable_wpautop_for_events', 9);
+    add_filter('the_content', 'disable_wpautop_globally', 9);
+
+    add_filter('wpcf7_autop_or_not', '__return_false');
 
     /*--------------------
      wp_footer() のフックを無効化
