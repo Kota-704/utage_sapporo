@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+@import "../../assets/scss/variables.scss";
+
+/*--------------------
+gallery
+--------------------*/
+
+.gallery {
+  padding-top: 120px;
+}
+
+.gallery_title {
+  @include cut_out_letters2($yellow, 65px);
+  background-image: url("../../assets/img/backgrounds/gallery_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 145px;
+  padding-top: 158px;
+  position: relative;
+  text-align: center;
+  z-index: 10;
+}
+
+.gallery_container {
+  gap: 26px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 50px;
+}
+
+.gallery_image {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+}
