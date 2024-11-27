@@ -3,19 +3,22 @@ swiperの設定
 --------------------*/
 
 const swiper = new Swiper(".swiper_campaign", {
-  slidesPerView: 3,
+  slidesPerView: 2.5,
   loop: true,
-  loopAdditionalSlides: 0,
+  loopAdditionalSlides: -3,
+  centeredSlides: true,
+  initialSlide: 4,
+  loopedSlides: 3,
   effect: "coverflow",
   coverflowEffect: {
     rotate: 0,
     stretch: 10,
-    depth: 350,
-    modifier: 1,
+    depth: 100,
+    modifier: 2,
     slideShadows: false,
   },
   autoplay: {
-    delay: 3000,
+    delay: 13000,
     disableOnInteraction: false,
   },
   navigation: {
@@ -23,3 +26,8 @@ const swiper = new Swiper(".swiper_campaign", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+swiper.on("init", () => {
+  swiper.update();
+});
+swiper.init();
