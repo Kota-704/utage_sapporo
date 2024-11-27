@@ -55,4 +55,11 @@ access
   color: #000000;
 }
 
+@media (max-width: 1400px) {
+  .access_layout {
+    margin: 46px auto 0;
+    max-width: 1000px;
+  }
+}
+
 /*# sourceMappingURL=component_access.css.map */

@@ -158,3 +158,36 @@ vip
   justify-content: center;
   width: 100%;
 }
+
+@media (max-width: 1400px) {
+  /*--------------------
+  events_1400
+  --------------------*/
+
+  .events_container {
+    padding: 90px 70px;
+  }
+
+  .event_top_title {
+    font-size: 70px;
+  }
+
+  .frame_left {
+    max-width: 400px;
+  }
+
+  /*--------------------
+  campaign
+  --------------------*/
+  .campaign {
+    padding-bottom: 124px;
+  }
+
+  /*--------------------
+  news
+  --------------------*/
+
+  .news_container .frame_left {
+    max-width: 720px;
+  }
+}

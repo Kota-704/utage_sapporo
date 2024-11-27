@@ -35,3 +35,14 @@ news
   color: $pure_white;
   font-size: 22px;
 }
+
+@media (max-width: 1400px) {
+  .news_layout {
+    gap: 40px;
+  }
+
+  .news_thumbnail img {
+    height: 240px;
+    width: 240px;
+  }
+}

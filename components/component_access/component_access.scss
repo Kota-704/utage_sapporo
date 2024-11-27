@@ -28,3 +28,10 @@ access
 .access_contact_link {
   @include button_link($pure_white, $pure_white, $deep_black, 402px);
 }
+
+@media (max-width: 1400px) {
+  .access_layout {
+    margin: 46px auto 0;
+    max-width: 1000px;
+  }
+}

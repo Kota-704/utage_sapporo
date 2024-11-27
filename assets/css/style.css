@@ -112,7 +112,7 @@ events
   border-left: 1px solid #feeb00;
   border-top: 1px solid #feeb00;
   border-radius: 20px 0 0 0;
-  height: 15%;
+  height: calc((100% - 68px) * 0.2);
   top: 0;
 }
 .frame_left::after {
@@ -120,7 +120,7 @@ events
   border-left: 1px solid #feeb00;
   border-radius: 0 0 0 20px;
   bottom: 0;
-  height: 70%;
+  height: calc((100% - 68px) * 0.8);
 }
 
 .frame_right {
@@ -140,7 +140,7 @@ events
 }
 .frame_right::before {
   border-right: 1px solid #feeb00;
-  height: 70%;
+  height: calc((100% - 68px) * 0.85);
   top: 0;
 }
 .frame_right::after {
@@ -148,7 +148,7 @@ events
   border-right: 1px solid #feeb00;
   border-radius: 0 0 20px 0;
   bottom: 0;
-  height: 15%;
+  height: calc((100% - 68px) * 0.15);
 }
 
 .event_top_title {
@@ -212,7 +212,7 @@ news
   border-left: 1px solid #feeb00;
   border-top: 1px solid #feeb00;
   border-radius: 20px 0 0 0;
-  height: 15%;
+  height: calc((100% - 68px) * 0.2);
   top: 0;
 }
 .news_container .frame_left::after {
@@ -220,7 +220,7 @@ news
   border-left: 1px solid #feeb00;
   border-radius: 0 0 0 20px;
   bottom: 0;
-  height: 70%;
+  height: calc((100% - 68px) * 0.8);
 }
 
 .news_container .frame_right {
@@ -240,7 +240,7 @@ news
 }
 .news_container .frame_right::before {
   border-right: 1px solid #feeb00;
-  height: 70%;
+  height: calc((100% - 68px) * 0.85);
   top: 0;
 }
 .news_container .frame_right::after {
@@ -248,7 +248,7 @@ news
   border-right: 1px solid #feeb00;
   border-radius: 0 0 20px 0;
   bottom: 0;
-  height: 15%;
+  height: calc((100% - 68px) * 0.15);
 }
 
 .news_top_title {
@@ -274,6 +274,33 @@ vip
   height: 455px;
   justify-content: center;
   width: 100%;
+}
+
+@media (max-width: 1400px) {
+  /*--------------------
+  events_1400
+  --------------------*/
+  .events_container {
+    padding: 90px 70px;
+  }
+  .event_top_title {
+    font-size: 70px;
+  }
+  .frame_left {
+    max-width: 400px;
+  }
+  /*--------------------
+  campaign
+  --------------------*/
+  .campaign {
+    padding-bottom: 124px;
+  }
+  /*--------------------
+  news
+  --------------------*/
+  .news_container .frame_left {
+    max-width: 720px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

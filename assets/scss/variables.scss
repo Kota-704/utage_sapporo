@@ -87,7 +87,7 @@ $yellow: #feeb00;
     border-left: 1px solid $yellow;
     border-top: 1px solid $yellow;
     border-radius: 20px 0 0 0;
-    height: 15%;
+    height: calc((100% - 68px) * 0.2);
     top: 0;
   }
 
@@ -96,7 +96,7 @@ $yellow: #feeb00;
     border-left: 1px solid $yellow;
     border-radius: 0 0 0 20px;
     bottom: 0;
-    height: 70%;
+    height: calc((100% - 68px) * 0.8);
   }
 }
 
@@ -119,7 +119,7 @@ $yellow: #feeb00;
 
   &::before {
     border-right: 1px solid $yellow;
-    height: 70%;
+    height: calc((100% - 68px) * 0.85);
     top: 0;
   }
 
@@ -128,7 +128,7 @@ $yellow: #feeb00;
     border-right: 1px solid $yellow;
     border-radius: 0 0 20px 0;
     bottom: 0;
-    height: 15%;
+    height: calc((100% - 68px) * 0.15);
   }
 }
 
