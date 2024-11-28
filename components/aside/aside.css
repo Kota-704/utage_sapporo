@@ -39,4 +39,17 @@ aside
   display: block;
 }
 
+@media (max-width: 1024px) {
+  .aside {
+    bottom: 21px;
+    left: 50%;
+    top: initial;
+    transform: translateX(-50%);
+  }
+  .link_container {
+    flex-direction: row;
+    gap: 22px;
+  }
+}
+
 /*# sourceMappingURL=aside.css.map */

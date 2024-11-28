@@ -302,5 +302,10 @@ vip
     max-width: 720px;
   }
 }
+@media (max-width: 1024px) {
+  .events {
+    padding: 120px 26px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

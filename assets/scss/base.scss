@@ -100,6 +100,18 @@ textarea {
   text-align: center;
 }
 
+.pc {
+  display: block;
+}
+
+.tablet {
+  display: none;
+}
+
+.sp {
+  display: none;
+}
+
 .noto_B {
   font-family: "Noto Sans JP Bold", sans-serif;
 }
@@ -166,4 +178,30 @@ animation
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (max-width: 1024px) {
+  /*--------------------
+  common_settings
+  --------------------*/
+  .pc {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  /*--------------------
+  common_settings
+  --------------------*/
+  .tablet {
+    display: none;
+  }
+
+  .sp {
+    display: block;
+  }
 }
