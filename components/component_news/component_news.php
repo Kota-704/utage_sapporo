@@ -13,9 +13,11 @@ $query = new WP_Query($args);
   <?php if ($query->have_posts()) :
       while ($query->have_posts()) : $query->the_post(); ?>
           <div class="news_item flex">
-              <?php if (has_post_thumbnail()) : ?>
+              <?php
+              $thumbnail_url = get_the_post_thumbnail_url(get_the_ID(), 'medium');
+              if ($thumbnail_url) : ?>
                   <div class="news_thumbnail">
-                      <?php the_post_thumbnail('medium'); ?>
+                      <img src="<?php echo esc_url($thumbnail_url); ?>" alt="<?php the_title_attribute(); ?>" class="news_image">
                   </div>
               <?php endif; ?>
               <div class="news_content">

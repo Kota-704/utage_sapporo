@@ -46,7 +46,8 @@ $yellow: #feeb00;
   padding: 14px 18px;
   text-align: center;
   transition: background-color 0.6s ease, color 0.6s ease;
-  width: $width;
+  max-width: $width;
+  width: 100%;
 
   &:hover {
     background-color: $hover_bg_color;

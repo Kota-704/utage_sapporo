@@ -140,7 +140,8 @@ entry
   padding: 14px 18px;
   text-align: center;
   transition: background-color 0.6s ease, color 0.6s ease;
-  width: 349px;
+  max-width: 349px;
+  width: 100%;
   display: block;
   margin: 72px auto 97px;
   transition: opacity 0.8s ease-out, transform 0.3s ease-out, background-color 0.5s ease, color 0.5s ease;

@@ -55,9 +55,23 @@ news
   .news_layout {
     gap: 40px;
   }
+  .news_thumbnail {
+    max-width: 240px;
+    width: 100%;
+  }
   .news_thumbnail img {
-    height: 240px;
-    width: 240px;
+    width: 100%;
+  }
+}
+@media (max-width: 820px) {
+  .news_layout {
+    gap: 20px;
+  }
+  .news_thumbnail {
+    max-width: 200px;
+  }
+  .news_image {
+    width: 100%;
   }
 }
 

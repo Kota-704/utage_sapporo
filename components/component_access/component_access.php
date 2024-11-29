@@ -1,7 +1,7 @@
 <div class="fade-in">
   <h2 class="section_title oswald_M">ACCESS</h2>
   <div class="access_layout flex">
-    <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/top/access_map.png" alt="access_map">
+    <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/top/access_map.png" alt="access_map" class="access_map_image" />
     <div class="access_right_contents flex">
       <p class="hour noto_M">OPENING HOUR <span class="noto_R">22:00- 4:30</span></p>
       <p class="address noto_M">〒064-0805<br />
