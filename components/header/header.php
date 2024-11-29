@@ -129,13 +129,13 @@
         <a href="<?php echo esc_url(home_url('/contact')); ?>" class="link_button">CONTANCT</a>
       </div>
       <div class="sns_link_container flex">
-        <a href="" class="sns_link">
+        <a href="https://www.instagram.com/utage_sapporo/" class="sns_link" target="_blank">
           <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/icons/Instagram_Glyph_White.png" alt="Instagram" />
         </a>
-        <a href="" class="sns_link">
+        <a href="https://x.com/UTAGE_SAPPORO?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="sns_link" target="_blank">
           <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/icons/logo-white.png" alt="X" />
         </a>
-        <a href="" class="sns_link flex">
+        <a href="https://www.tiktok.com/@utage_sapporo" class="sns_link flex" target="_blank">
           <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/icons/TikTok-logo-RGB-Stacked-white-simplified.png" alt="TikTok" />
         </a>
       </div>
