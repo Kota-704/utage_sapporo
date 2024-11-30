@@ -25,6 +25,14 @@ const swiper = new Swiper(".swiper_campaign", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    501: {
+      slidesPerView: 2.5,
+    },
+  },
 });
 
 swiper.on("init", () => {

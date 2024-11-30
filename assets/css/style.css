@@ -394,6 +394,35 @@ vip
     width: 100%;
     z-index: 2;
   }
+  .line_bottom {
+    bottom: 0;
+    height: 3px;
+    left: 0;
+    max-width: 340px;
+    position: absolute;
+    width: 85%;
+  }
+  .line_bottom::before {
+    background-color: #feeb00;
+    bottom: 0;
+    content: "";
+    filter: blur(5px);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+  .line_bottom::after {
+    border-top: 1px solid #feeb00;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
