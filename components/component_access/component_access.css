@@ -54,6 +54,7 @@ access
 .access_contact_link:hover {
   background-color: #ffffff;
   color: #000000;
+  border: 1px solid #ffffff;
 }
 
 @media (max-width: 1400px) {
@@ -74,6 +75,14 @@ access
   }
   .access_right_contents {
     padding-right: 24px;
+  }
+}
+@media (max-width: 500px) {
+  .access_layout {
+    flex-direction: column;
+  }
+  .access_right_contents {
+    padding-left: 24px;
   }
 }
 

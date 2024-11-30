@@ -18,10 +18,6 @@
   font-family: "Oswald";
   src: url("/wp-content/themes/utage_sapporo/assets/fonts/Oswald-VariableFont_wght.ttf") format("truetype");
 }
-body {
-  height: 100%;
-}
-
 /*--------------------
 recruit
 --------------------*/
@@ -149,6 +145,7 @@ entry
 .entry_link:hover {
   background-color: #050505;
   color: #feeb00;
+  border: 1px solid #050505;
 }
 
 /*# sourceMappingURL=recruit.css.map */

@@ -52,6 +52,7 @@ $yellow: #feeb00;
   &:hover {
     background-color: $hover_bg_color;
     color: $hover_color;
+    border: 1px solid $hover_bg_color;
   }
 }
 

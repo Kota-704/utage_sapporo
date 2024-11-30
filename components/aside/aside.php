@@ -2,7 +2,7 @@
   <div class="link_container flex">
     <a href="tel:011-211-6918" class="contact_link">
       <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/icons/vip_reservations.png" alt="vip_reservations" class="pc" />
-      <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/icons/vip_reservvation_sp.png" alt="vip_reservations" class="tablet" />
+      <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/icons/vip_reservvation_sp.png" alt="vip_reservations" class="tablet sp" />
     </a>
     <a href="https://www.instagram.com/utage_sapporo/" class="contact_link" target="_blank">
       <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/icons/Instagram_Glyph_White.png" alt="Instagram" />

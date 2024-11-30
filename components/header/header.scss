@@ -7,14 +7,14 @@ header
 --------------------*/
 
 .fv_header {
-  background-color: #111111;
+  background-color: rgba(17, 17, 17, 0.75);
   height: 120px;
   width: 100%;
   z-index: 120;
 }
 
 .header {
-  background-color: #111111;
+  background-color: rgba(17, 17, 17, 0.75);
   height: 120px;
   left: 0;
   position: fixed;
@@ -222,5 +222,16 @@ hamburger_content
 
   .sns_link_container {
     margin-top: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .fv_header,
+  .header {
+    background-color: transparent;
+  }
+
+  .header_nav {
+    display: none;
   }
 }

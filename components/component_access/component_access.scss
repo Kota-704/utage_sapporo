@@ -52,3 +52,13 @@ access
     padding-right: 24px;
   }
 }
+
+@media (max-width: 500px) {
+  .access_layout {
+    flex-direction: column;
+  }
+
+  .access_right_contents {
+    padding-left: 24px;
+  }
+}

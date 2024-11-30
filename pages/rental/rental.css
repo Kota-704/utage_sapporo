@@ -42,12 +42,6 @@ rental
 /*--------------------
 reservation
 --------------------*/
-.reservation {
-  background-color: #050505;
-  margin-top: -625px;
-  padding-top: 625px;
-}
-
 .section_title {
   margin-top: 70px;
 }
@@ -68,11 +62,12 @@ reservation
   width: 100%;
   display: block;
   margin: 72px auto 97px;
-  transition: opacity 0.8s ease-out, transform 1s ease-out;
+  transition: opacity 0.8s ease-out, transform 0.3s ease-out, background-color 0.5s ease, color 0.5s ease;
 }
 .reservation_link:hover {
   background-color: #050505;
   color: #feeb00;
+  border: 1px solid #050505;
 }
 
 /*# sourceMappingURL=rental.css.map */

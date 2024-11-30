@@ -25,14 +25,19 @@ aside
 
 @media (max-width: 1024px) {
   .aside {
-    bottom: 21px;
+    background-color: $deep_black;
+    bottom: 0;
+    height: 79px;
     left: 50%;
     top: initial;
     transform: translateX(-50%);
+    width: 100%;
   }
 
   .link_container {
+    align-items: center;
     flex-direction: row;
     gap: 22px;
+    height: 100%;
   }
 }
