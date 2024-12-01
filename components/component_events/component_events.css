@@ -73,5 +73,16 @@ events
     width: 100%;
   }
 }
+@media (max-width: 500px) {
+  .events_layout {
+    justify-content: initial;
+  }
+  .event_item {
+    max-width: initial;
+  }
+  .event_thumbnail {
+    max-width: initial;
+  }
+}
 
 /*# sourceMappingURL=component_events.css.map */
