@@ -128,6 +128,14 @@ textarea {
   display: none;
 }
 
+.pc_tablet {
+  display: block;
+}
+
+.tablet_sp {
+  display: none;
+}
+
 .noto_B {
   font-family: "Noto Sans JP Bold", sans-serif;
 }
@@ -205,6 +213,9 @@ animation
   .tablet {
     display: block;
   }
+  .tablet_sp {
+    display: block;
+  }
 }
 @media (max-width: 500px) {
   /*--------------------
@@ -215,6 +226,9 @@ animation
   }
   .sp {
     display: block;
+  }
+  .pc_tablet {
+    display: none;
   }
 }
 
