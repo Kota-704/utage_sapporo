@@ -10,13 +10,13 @@
             Your browser does not support the video tag.
           </video>
           <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/backgrounds/fv_background.png" alt="" class="background_image" />
-          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/top/fv_title.png" alt="fv_title" class="fv_title_image pc tablet" />
+          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/top/fv_title.png" alt="fv_title" class="fv_title_image pc_tablet" />
           <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/logo/logo_A_white.png" alt="fv_title" class="fv_title_image sp" />
         </div>
       </section>
 
       <section id="about" class="about">
-        <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/top/about_title_sp.png" alt="about_title sp" class="about_title_image" />
+        <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/top/about_title_sp.png" alt="about_title sp" class="about_title_image sp" />
         <p class="about_text noto_R fade-in">
           それも今何しろこの努力めというものの所より叱るましだろ。<br /><br />
 
@@ -28,8 +28,8 @@
 
       <section id="events" class="events">
         <div class="events_container fade-in">
-          <span class="frame_left pc tablet"></span>
-          <span class="frame_right pc tablet"></span>
+          <span class="frame_left pc_tablet"></span>
+          <span class="frame_right pc_tablet"></span>
           <h2 class="event_top_title oswald_B">
             <span class="line_top sp"></span>
             PICK UP EVENTS
