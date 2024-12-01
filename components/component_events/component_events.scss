@@ -66,6 +66,7 @@ events
 
 @media (max-width: 500px) {
   .events_layout {
+    gap: 0;
     justify-content: initial;
   }
   .event_item {
@@ -74,5 +75,11 @@ events
 
   .event_thumbnail {
     max-width: initial;
+  }
+
+  .event_image {
+    margin: 0 auto;
+    max-width: 270px;
+    width: 70%;
   }
 }

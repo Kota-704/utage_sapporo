@@ -21,7 +21,7 @@ $query = new WP_Query($args);
                             <img src="<?php echo esc_url($thumbnail_url); ?>" alt="<?php the_title_attribute(); ?>" class="event_image">
                         </div>
                     <?php endif; ?>
-                    <div class="event_content">
+                    <div class="event_content pc_tablet">
                         <h3 class="event_title noto_B"><?php the_title(); ?></h3>
                         <p class="event_description noto_M">
                             <?php the_content(); ?>

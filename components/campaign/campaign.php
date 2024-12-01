@@ -1,5 +1,9 @@
 <section id="campaign" class="campaign">
-  <h2 class="campaign_top_title oswald_B">CAMPAIGN</h2>
+  <h2 class="campaign_top_title oswald_B">
+    <span class="line_top sp"></span>
+    CAMPAIGN
+    <span class="line_bottom sp"></span>
+  </h2>
 
   <div class="swiper swiper_campaign">
     <div class="swiper-wrapper">

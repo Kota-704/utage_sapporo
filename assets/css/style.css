@@ -333,38 +333,8 @@ vip
 }
 @media (max-width: 500px) {
   /*--------------------
-  fv
+  common_settings_500
   --------------------*/
-  .fv_title_image {
-    max-width: 300px;
-    width: 75%;
-  }
-  /*--------------------
-  about
-  --------------------*/
-  .about_title_image {
-    margin: 0 auto;
-    padding-top: 84px;
-  }
-  .about_text {
-    padding: 38px 24px 130px 24px;
-  }
-  /*--------------------
-  events
-  --------------------*/
-  .events {
-    padding: 120px 0;
-  }
-  .events_container {
-    padding: 78px 0;
-  }
-  .event_top_title {
-    font-size: 42px;
-    line-height: 74px;
-    padding: initial;
-    position: relative;
-    text-align: center;
-  }
   .line_top {
     height: 3px;
     max-width: 340px;
@@ -422,6 +392,39 @@ vip
     position: absolute;
     width: 100%;
     z-index: 2;
+  }
+  /*--------------------
+  fv_500
+  --------------------*/
+  .fv_title_image {
+    max-width: 300px;
+    width: 75%;
+  }
+  /*--------------------
+  about_500
+  --------------------*/
+  .about_title_image {
+    margin: 0 auto;
+    padding-top: 84px;
+  }
+  .about_text {
+    padding: 38px 24px 130px 24px;
+  }
+  /*--------------------
+  events_500
+  --------------------*/
+  .events {
+    padding: 120px 0 94px;
+  }
+  .events_container {
+    padding: 78px 0;
+  }
+  .event_top_title {
+    font-size: 42px;
+    line-height: 74px;
+    padding: initial;
+    position: relative;
+    text-align: center;
   }
 }
 
