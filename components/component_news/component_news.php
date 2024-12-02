@@ -7,29 +7,33 @@ $args = array(
     'order' => 'ASC',
 );
 $query = new WP_Query($args);
-;?>
+?>
 
-<div class="news_layout flex">
-  <?php if ($query->have_posts()) :
-      while ($query->have_posts()) : $query->the_post(); ?>
-          <div class="news_item flex">
-              <?php
-              $thumbnail_url = get_the_post_thumbnail_url(get_the_ID(), 'medium');
-              if ($thumbnail_url) : ?>
-                  <div class="news_thumbnail">
-                      <img src="<?php echo esc_url($thumbnail_url); ?>" alt="<?php the_title_attribute(); ?>" class="news_image">
-                  </div>
-              <?php endif; ?>
-              <div class="news_content">
-                  <h3 class="news_title noto_B"><?php echo get_the_date(); ?></h3>
-                  <p class="news_description noto_M">
-                      <?php the_content(); ?>
-                  </p>
-              </div>
-          </div>
-      <?php endwhile;
-      wp_reset_postdata();
-    else : ?>
-      <p class="no_news noto_B">現在、イベント情報はありません。</p>
-  <?php endif; ?>
+<div class="swiper swiper_news">
+    <div class="swiper-wrapper news_layout flex">
+        <?php if ($query->have_posts()) : ?>
+            <?php while ($query->have_posts()) : $query->the_post(); ?>
+                <div class="swiper-slide news_item flex">
+                    <?php
+                    $thumbnail_url = get_the_post_thumbnail_url(get_the_ID(), 'medium');
+                    if ($thumbnail_url) : ?>
+                        <div class="news_thumbnail">
+                            <img src="<?php echo esc_url($thumbnail_url); ?>" alt="<?php the_title_attribute(); ?>" class="news_image">
+                        </div>
+                    <?php endif; ?>
+                    <div class="news_content pc_tablet">
+                        <h3 class="news_title noto_B"><?php the_title(); ?></h3>
+                        <p class="news_description noto_M">
+                            <?php the_excerpt(); ?>
+                        </p>
+                    </div>
+                </div>
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+        <?php else : ?>
+            <p class="no_news noto_B">現在、イベント情報はありません。</p>
+        <?php endif; ?>
+    </div>
+    <div class="swiper-button-prev sp"></div>
+    <div class="swiper-button-next sp"></div>
 </div>

@@ -59,7 +59,7 @@ news
     max-width: 240px;
     width: 100%;
   }
-  .news_thumbnail img {
+  .news_image {
     width: 100%;
   }
 }
@@ -72,6 +72,23 @@ news
   }
   .news_image {
     width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .news_layout {
+    gap: 0;
+    justify-content: initial;
+  }
+  .news_item {
+    max-width: initial;
+  }
+  .news_thumbnail {
+    max-width: initial;
+  }
+  .news_image {
+    margin: 0 auto;
+    max-width: 270px;
+    width: 70%;
   }
 }
 
