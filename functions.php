@@ -81,13 +81,19 @@
     autopストップ
     --------------------*/
 
-    function disable_wpautop_globally($content) {
-        remove_filter('the_content', 'wpautop');
-        return $content;
-    }
-    add_filter('the_content', 'disable_wpautop_globally', 9);
+    remove_filter('the_content', 'wpautop');
+    remove_filter('the_excerpt', 'wpautop');
+    remove_filter('widget_text_content', 'wpautop');
 
     add_filter('wpcf7_autop_or_not', '__return_false');
+
+    function disable_tinymce_wpautop($init) {
+        $init['wpautop'] = false;
+        $init['remove_linebreaks'] = false;
+        return $init;
+    }
+    add_filter('tiny_mce_before_init', 'disable_tinymce_wpautop');
+
 
     /*--------------------
      wp_footer() のフックを無効化
