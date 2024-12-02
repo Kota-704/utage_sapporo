@@ -45,9 +45,13 @@
 
       <section id="news" class="news">
         <div class="news_container fade-in">
-          <span class="frame_left"></span>
-          <span class="frame_right"></span>
-          <h2 class="event_top_title oswald_B">NEWS</h2>
+          <span class="frame_left pc_tablet"></span>
+          <span class="frame_right pc_tablet"></span>
+          <h2 class="event_top_title oswald_B">
+            <span class="line_top sp"></span>
+            NEWS
+            <span class="line_bottom sp"></span>
+          </h2>
           <?php get_template_part('components/component_news/component_news'); ?>
         </div>
       </section>

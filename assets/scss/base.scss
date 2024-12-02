@@ -109,7 +109,7 @@ textarea {
 }
 
 .sp {
-  display: none;
+  display: none !important;
 }
 
 .pc_tablet {
@@ -214,7 +214,7 @@ animation
   }
 
   .sp {
-    display: block;
+    display: block !important;
   }
 
   .pc_tablet {

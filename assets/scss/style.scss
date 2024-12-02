@@ -336,4 +336,32 @@ vip
     position: relative;
     text-align: center;
   }
+
+  /*--------------------
+  campaign_500
+  --------------------*/
+
+  .campaign {
+    background-color: transparent;
+  }
+
+  .campaign_top_title {
+    font-size: 42px;
+    line-height: 74px;
+    padding: initial;
+    position: relative;
+    text-align: center;
+  }
+
+  /*--------------------
+  news_500
+  --------------------*/
+
+  .news {
+    padding: 120px 0 94px;
+  }
+
+  .news_container {
+    padding: 78px 0;
+  }
 }

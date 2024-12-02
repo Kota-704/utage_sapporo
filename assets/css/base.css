@@ -125,7 +125,7 @@ textarea {
 }
 
 .sp {
-  display: none;
+  display: none !important;
 }
 
 .pc_tablet {
@@ -225,7 +225,7 @@ animation
     display: none;
   }
   .sp {
-    display: block;
+    display: block !important;
   }
   .pc_tablet {
     display: none;

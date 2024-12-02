@@ -34,6 +34,6 @@ $query = new WP_Query($args);
             <p class="no_events noto_B">現在、イベント情報はありません。</p>
         <?php endif; ?>
     </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev sp"></div>
+    <div class="swiper-button-next sp"></div>
 </div>
