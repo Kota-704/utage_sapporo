@@ -2,11 +2,11 @@
 swiperの設定
 --------------------*/
 document.addEventListener("DOMContentLoaded", () => {
-  let eventsSwiper;
+  let newsSwiper;
 
-  function initializeEventsSwiper() {
-    if (window.innerWidth <= 500 && !eventsSwiper) {
-      eventsSwiper = new Swiper(".swiper_news", {
+  function initializeNewsSwiper() {
+    if (window.innerWidth <= 500 && !newsSwiper) {
+      newsSwiper = new Swiper(".swiper_news", {
         slidesPerView: 1,
         initialSlide: 0,
         loop: false,
@@ -24,16 +24,16 @@ document.addEventListener("DOMContentLoaded", () => {
           },
         },
       });
-    } else if (window.innerWidth > 500 && eventsSwiper) {
-      eventsSwiper.destroy(true, true);
-      eventsSwiper = null;
+    } else if (window.innerWidth > 500 && newsSwiper) {
+      newsSwiper.destroy(true, true);
+      newsSwiper = null;
 
       document.querySelector(".swiper-button-next").style.display = "none";
       document.querySelector(".swiper-button-prev").style.display = "none";
     }
   }
 
-  initializeEventsSwiper();
+  initializeNewsSwiper();
 
-  window.addEventListener("resize", initializeEventsSwiper);
+  window.addEventListener("resize", initializeNewsSwiper);
 });

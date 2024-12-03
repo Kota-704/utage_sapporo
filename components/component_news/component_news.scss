@@ -16,6 +16,8 @@ news
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  max-width: 300px;
+  width: 100%;
 }
 
 .news_title {
@@ -37,6 +39,10 @@ news
 }
 
 @media (max-width: 1400px) {
+  .news_item {
+    max-width: 200px;
+  }
+
   .news_layout {
     gap: 40px;
   }
@@ -83,5 +89,9 @@ news
     margin: 0 auto;
     max-width: 270px;
     width: 70%;
+  }
+
+  .news_description {
+    margin: 0 auto;
   }
 }

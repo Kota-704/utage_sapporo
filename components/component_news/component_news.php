@@ -21,9 +21,9 @@ $query = new WP_Query($args);
                             <img src="<?php echo esc_url($thumbnail_url); ?>" alt="<?php the_title_attribute(); ?>" class="news_image">
                         </div>
                     <?php endif; ?>
-                    <div class="news_content pc_tablet">
-                        <h3 class="news_title noto_B"><?php the_title(); ?></h3>
-                        <p class="news_description noto_M">
+                    <div class="news_content">
+                        <h3 class="news_title noto_B txt_center"><?php the_title(); ?></h3>
+                        <p class="news_description noto_M txt_center">
                             <?php the_excerpt(); ?>
                         </p>
                     </div>
