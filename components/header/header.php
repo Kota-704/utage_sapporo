@@ -83,7 +83,7 @@
 <div class="hamburger_content">
   <div class="overlay"></div>
   <div class="hamburger_content_layout flex">
-    <div class="left_content">
+    <div class="left_content pc_tablet">
       <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/logo/logo_B_white.png" alt="logo" />
     </div>
     <div class="right_content">

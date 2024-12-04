@@ -1,7 +1,7 @@
     <div class="footer">
       <div class="w_1280 wrapper">
         <div class="footer_layout flex">
-          <p class="address noto_B txt_center">
+          <p class="address noto_B">
             〒064-0805 北海道札幌市中央区南5条西3丁目6-1 札幌東宝公楽ビル B1F
           </p>
           <ul class="link_container flex">

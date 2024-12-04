@@ -171,9 +171,9 @@ campaign
 }
 
 .campaign_top_title {
-  color: #030319;
+  color: transparent;
   font-size: 85px;
-  text-shadow: 0px 0px 5px #feeb00;
+  -webkit-text-stroke: #feeb00 1px;
   padding-top: 42px;
   text-align: center;
 }
@@ -417,7 +417,7 @@ vip
     padding: 120px 0 94px;
   }
   .events_container {
-    padding: 78px 0;
+    padding: 0;
   }
   .event_top_title {
     font-size: 42px;
@@ -431,6 +431,7 @@ vip
   --------------------*/
   .campaign {
     background-color: transparent;
+    padding-bottom: 0;
   }
   .campaign_top_title {
     font-size: 42px;
@@ -443,10 +444,16 @@ vip
   news_500
   --------------------*/
   .news {
-    padding: 120px 0 94px;
+    padding: 94px 0;
   }
   .news_container {
-    padding: 78px 0;
+    padding: 0;
+  }
+  /*--------------------
+  vip_500
+  --------------------*/
+  .vip {
+    height: 177px;
   }
 }
 

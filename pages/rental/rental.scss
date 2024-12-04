@@ -40,3 +40,20 @@ reservation
   transition: opacity 0.8s ease-out, transform 0.3s ease-out,
     background-color 0.5s ease, color 0.5s ease;
 }
+
+@media (max-width: 500px) {
+  .rental_title {
+    font-size: 42px;
+    padding-top: 72px;
+  }
+
+  .section_title {
+    font-size: 32px;
+    margin-top: 50px;
+  }
+
+  .reservation_link {
+    margin-bottom: 16px;
+    margin-top: 32px;
+  }
+}

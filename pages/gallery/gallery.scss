@@ -33,3 +33,23 @@ gallery
   aspect-ratio: 1 / 1;
   width: 100%;
 }
+
+@media (max-width: 500px) {
+  .gallery {
+    padding-top: 0;
+  }
+
+  .gallery_title {
+    background-position: 50% 0;
+    font-size: 42px;
+    padding-bottom: 64px;
+    padding-top: 54px;
+  }
+
+  .gallery_container {
+    gap: 8px 10px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 32px;
+    margin-top: 26px;
+  }
+}

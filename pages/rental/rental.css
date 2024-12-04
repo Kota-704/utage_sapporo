@@ -70,4 +70,19 @@ reservation
   border: 1px solid #050505;
 }
 
+@media (max-width: 500px) {
+  .rental_title {
+    font-size: 42px;
+    padding-top: 72px;
+  }
+  .section_title {
+    font-size: 32px;
+    margin-top: 50px;
+  }
+  .reservation_link {
+    margin-bottom: 16px;
+    margin-top: 32px;
+  }
+}
+
 /*# sourceMappingURL=rental.css.map */

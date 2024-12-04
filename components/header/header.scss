@@ -229,9 +229,29 @@ hamburger_content
   .fv_header,
   .header {
     background-color: transparent;
+    height: 60px;
   }
 
   .header_nav {
     display: none;
+  }
+
+  .hamburger_content.active {
+    height: 105vh;
+  }
+
+  .right_content {
+    width: 100%;
+  }
+
+  .hamburger_list_container {
+    gap: 9px;
+    grid-auto-flow: row;
+    grid-template-columns: initial;
+    text-align: center;
+  }
+
+  .link_button_container {
+    flex-direction: column;
   }
 }

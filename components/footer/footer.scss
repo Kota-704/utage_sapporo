@@ -22,6 +22,7 @@ footer
   color: $pure_white;
   font-size: 14px;
   padding-top: 87px;
+  text-align: center;
 }
 
 .footer .link_container {
@@ -50,5 +51,16 @@ footer
 
   .copyright {
     margin-top: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    background-image: url(../../assets/img/backgrounds/footer_background_sp.png);
+    background-size: contain;
+  }
+
+  .footer .address {
+    text-align: left;
   }
 }

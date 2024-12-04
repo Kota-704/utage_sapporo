@@ -72,7 +72,7 @@ textarea {
 
 .w_1280 {
   max-width: 1240px;
-  padding: 0 16px;
+  padding: 0 20px;
   width: 100%;
 }
 
@@ -101,11 +101,11 @@ textarea {
 }
 
 .pc {
-  display: block;
+  display: block !important;
 }
 
 .tablet {
-  display: none;
+  display: none !important;
 }
 
 .sp {
@@ -113,11 +113,11 @@ textarea {
 }
 
 .pc_tablet {
-  display: block;
+  display: block !important;
 }
 
 .tablet_sp {
-  display: none;
+  display: none !important;
 }
 
 .noto_B {
@@ -193,15 +193,15 @@ animation
   common_settings
   --------------------*/
   .pc {
-    display: none;
+    display: none !important;
   }
 
   .tablet {
-    display: block;
+    display: block !important;
   }
 
   .tablet_sp {
-    display: block;
+    display: block !important;
   }
 }
 
@@ -210,7 +210,7 @@ animation
   common_settings
   --------------------*/
   .tablet {
-    display: none;
+    display: none !important;
   }
 
   .sp {
@@ -218,6 +218,10 @@ animation
   }
 
   .pc_tablet {
-    display: none;
+    display: none !important;
+  }
+
+  .section_title {
+    font-size: 42px;
   }
 }

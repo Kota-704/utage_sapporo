@@ -41,3 +41,29 @@ floor
   height: 300px;
   width: 100%;
 }
+
+@media (max-width: 500px) {
+  .floor {
+    padding-top: 0;
+  }
+
+  .floor_title {
+    font-size: 42px;
+    padding-bottom: 64px;
+    padding-top: 54px;
+  }
+
+  .floor_map_image {
+    margin-top: 16px;
+  }
+
+  .floor_image_container {
+    gap: 17px 10px;
+    margin-bottom: 64px;
+    margin-top: 36px;
+  }
+
+  .floor_image {
+    height: initial;
+  }
+}
