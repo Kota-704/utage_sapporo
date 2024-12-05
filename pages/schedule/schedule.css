@@ -19,13 +19,6 @@
   src: url("/wp-content/themes/utage_sapporo/assets/fonts/Oswald-VariableFont_wght.ttf") format("truetype");
 }
 /*--------------------
-common_settings
---------------------*/
-body {
-  height: 100%;
-}
-
-/*--------------------
 schedule_top
 --------------------*/
 .archive_image_container {
@@ -34,6 +27,8 @@ schedule_top
 
 .archive_image {
   margin: 0 auto;
+  max-width: 1000px;
+  width: 95%;
 }
 
 /*--------------------

@@ -3,14 +3,6 @@
 @import "../../assets/scss/variables.scss";
 
 /*--------------------
-common_settings
---------------------*/
-
-body {
-  height: 100%;
-}
-
-/*--------------------
 schedule_top
 --------------------*/
 .archive_image_container {
@@ -19,6 +11,8 @@ schedule_top
 
 .archive_image {
   margin: 0 auto;
+  max-width: 1000px;
+  width: 95%;
 }
 
 /*--------------------
