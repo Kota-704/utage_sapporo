@@ -1,7 +1,7 @@
   <section class="recruit">
     <div class="w_1280 wrapper">
         <h2 class="recruit_title oswald_M">RECRUIT</h2>
-        <p class="top_text txt_center noto_M">「UTAGE SAPPORO」では新たにスタッフ・ダンサー・DJを募集しております！</p>
+        <p class="top_text noto_M">「UTAGE SAPPORO」では新たにスタッフ・ダンサー・DJを募集しております！</p>
         <div class="recruit_top_layout flex">
           <div class="recruit_top_container">
             <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/DJ/recruit_dj.jpg" alt="DJ" class="recruit_image">
@@ -50,17 +50,17 @@
               <dt class="detail_heading">勤務時間</dt>
               <dd class="detail_text">
                 ・週2日～、1日6H～OK <br />
-                →24:00～翌6:00も可◎ <br />
-                →深夜時間帯/22:00～翌5:00 <br />
-                →勤務時間帯はほぼ深夜時給です♪ <br />
-                金・土出勤できる方歓迎 <br />
-                ※イベント時は上記時間帯以外の早出有
+                &#12288;→24:00～翌6:00も可◎ <br />
+                &#12288;→深夜時間帯/22:00～翌5:00 <br />
+                &#12288;→勤務時間帯はほぼ深夜時給です♪ <br />
+                &#12288;金・土出勤できる方歓迎 <br />
+                &#12288;※イベント時は上記時間帯以外の早出有
               </dd>
               <span class="horizon"></span>
               <dt class="detail_heading">給与</dt>
               <dd class="detail_text">
                 ・ [ア・パ]時給1,438円～ <br />
-                 交通費：一部支給（規定あり）<br /><br />
+                 &#12288;交通費：一部支給（規定あり）<br /><br />
                  【ゆくゆくは正社員へステップアップしたい方】<br />
                  * [正]月給30万円～ <br />
                  ※始めは、アルバイトからの雇用になります。<br />
