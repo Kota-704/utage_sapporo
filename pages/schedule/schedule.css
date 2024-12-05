@@ -75,4 +75,14 @@ schedule_detail
   margin-top: 24px;
 }
 
+@media (max-width: 500px) {
+  .schedule_item_sp {
+    display: flex !important;
+  }
+  .schedule_thumbnail {
+    height: 145px;
+    width: 145px;
+  }
+}
+
 /*# sourceMappingURL=schedule.css.map */

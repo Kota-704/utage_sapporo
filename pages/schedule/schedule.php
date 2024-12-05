@@ -26,7 +26,7 @@ if ($archive_image) {
                 }
                 ?>
                 <li class="schedule_list">
-                    <div class="schedule_item flex">
+                    <div class="schedule_item flex pc_tablet">
                         <?php if (has_post_thumbnail()) : ?>
                             <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title_attribute(); ?>" class="schedule_thumbnail">
                         <?php endif; ?>
@@ -45,6 +45,25 @@ if ($archive_image) {
                                 <?php the_content(); ?>
                             </div>
                         </div>
+                    </div>
+                    <div class="schedule_item_sp flex sp">
+                        <?php if (has_post_thumbnail()) : ?>
+                            <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title_attribute(); ?>" class="schedule_thumbnail">
+                        <?php endif; ?>
+
+                        <div class="schedule_right_item">
+                            <?php if ($event_date_raw) : ?>
+                                <p class="schedule_date oswald_B">
+                                    <?php echo esc_html($formatted_date . '(' . $formatted_weekday . ')'); ?>
+                                </p>
+                            <?php endif; ?>
+
+                            <p class="schedule_heading noto_B">GUEST</p>
+                            <h2 class="schedule_guest noto_B"><?php the_title(); ?></h2>
+                        </div>
+                    </div>
+                    <div class="schedule_content noto_M sp">
+                        <?php the_content(); ?>
                     </div>
                 </li>
             <?php endwhile;
