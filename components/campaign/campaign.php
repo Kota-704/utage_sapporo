@@ -19,8 +19,11 @@
           while ($campaign_query->have_posts()) : $campaign_query->the_post(); ?>
               <div class="swiper-slide">
                   <?php if (has_post_thumbnail()) : ?>
+                    <?php
+                      $thumbnail_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
+                    ?>
                       <div class="campaign_thumbnail">
-                          <?php the_post_thumbnail('large'); ?>
+                        <img src="<?php echo esc_url($thumbnail_url); ?>" alt="<?php the_title_attribute(); ?>" class="campaign_image" />
                       </div>
                   <?php endif; ?>
               </div>

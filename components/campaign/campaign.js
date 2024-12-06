@@ -5,7 +5,6 @@ swiperの設定
 const swiper = new Swiper(".swiper_campaign", {
   slidesPerView: 2.5,
   loop: true,
-  loopAdditionalSlides: -3,
   centeredSlides: true,
   initialSlide: 4,
   loopedSlides: 3,
@@ -20,6 +19,7 @@ const swiper = new Swiper(".swiper_campaign", {
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
+    pauseOnMouseEnter: false,
   },
   navigation: {
     nextEl: ".swiper-button-next",
