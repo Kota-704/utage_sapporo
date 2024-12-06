@@ -6,6 +6,10 @@
 events
 --------------------*/
 
+.events .swiper {
+  overflow: visible !important;
+}
+
 .events_layout {
   align-items: center;
   gap: 80px;
@@ -20,9 +24,18 @@ events
   width: 100%;
 }
 
+.event_image {
+  margin: 0 auto;
+}
+
+.event_content {
+  margin-top: 24px;
+}
+
 .event_title {
   color: $pure_white;
   font-size: 20px;
+  margin-top: 24px;
 }
 
 .event_description {
@@ -65,6 +78,10 @@ events
 }
 
 @media (max-width: 500px) {
+  .events .swiper {
+    overflow: hidden !important;
+  }
+
   .events_layout {
     gap: 0;
     justify-content: initial;

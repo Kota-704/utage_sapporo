@@ -18,7 +18,7 @@ $query = new WP_Query($args);
                     $thumbnail_url = get_the_post_thumbnail_url(get_the_ID(), 'medium');
                     if ($thumbnail_url) : ?>
                         <div class="event_thumbnail">
-                            <img src="<?php echo esc_url($thumbnail_url); ?>" alt="<?php the_title_attribute(); ?>" class="event_image">
+                            <img src="<?php echo esc_url($thumbnail_url); ?>" alt="<?php the_title_attribute(); ?>" class="event_image" />
                         </div>
                     <?php endif; ?>
                     <div class="event_content pc_tablet">
