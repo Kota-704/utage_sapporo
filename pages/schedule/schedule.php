@@ -26,7 +26,7 @@ if ($archive_image) {
                 }
                 ?>
                 <li class="schedule_list">
-                    <div class="schedule_item flex pc_tablet">
+                    <div class="schedule_item flex">
                         <?php if (has_post_thumbnail()) : ?>
                             <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title_attribute(); ?>" class="schedule_thumbnail">
                         <?php endif; ?>
