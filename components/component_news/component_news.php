@@ -18,11 +18,11 @@ $query = new WP_Query($args);
                     $thumbnail_url = get_the_post_thumbnail_url(get_the_ID(), 'medium');
                     if ($thumbnail_url) : ?>
                         <div class="news_thumbnail">
-                            <img src="<?php echo esc_url($thumbnail_url); ?>" alt="<?php the_title_attribute(); ?>" class="news_image">
+                            <img src="<?php echo esc_url($thumbnail_url); ?>" alt="<?php the_title_attribute(); ?>" class="news_image" />
                         </div>
                     <?php endif; ?>
                     <div class="news_content">
-                        <h3 class="news_title noto_B txt_center"><?php echo get_the_date(); ?></h3>
+                        <h3 class="news_title noto_B"><?php echo get_the_date(); ?></h3>
                         <p class="news_description noto_M txt_center">
                             <?php the_excerpt(); ?>
                         </p>

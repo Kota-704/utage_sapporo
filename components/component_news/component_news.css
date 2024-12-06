@@ -21,6 +21,10 @@
 /*--------------------
 news
 --------------------*/
+.news .swiper {
+  overflow: visible !important;
+}
+
 .news_layout {
   align-items: center;
   gap: 80px;
@@ -35,9 +39,18 @@ news
   width: 100%;
 }
 
+.news_image {
+  margin: 0 auto;
+}
+
+.news_content {
+  margin-top: 24px;
+}
+
 .news_title {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 14px;
+  text-align: left;
 }
 
 .news_description {
@@ -80,6 +93,9 @@ news
   }
 }
 @media (max-width: 500px) {
+  .news .swiper {
+    overflow: hidden !important;
+  }
   .news_layout {
     gap: 0;
     justify-content: initial;
