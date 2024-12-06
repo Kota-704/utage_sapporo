@@ -12,6 +12,7 @@ events
 
 .events_layout {
   align-items: center;
+  flex-direction: row-reverse;
   gap: 80px;
   justify-content: center;
 }
