@@ -1,8 +1,7 @@
-<section class="recruit">
+<section class="contact">
   <div class="w_1280 wrapper">
 
     <?php
-    // ページを取得
     $page = get_page_by_path('contact');
     ?>
 
