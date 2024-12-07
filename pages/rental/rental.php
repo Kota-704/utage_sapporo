@@ -12,5 +12,5 @@
         不明点等お気軽にお問い合わせください。
     </p>
 
-    <a href="" class="reservation_link oswald_R fade-in">RESERVATION</a>
+    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="reservation_link oswald_R fade-in">RESERVATION</a>
   </section>

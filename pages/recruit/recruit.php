@@ -99,6 +99,6 @@
         不明点等お気軽にお問い合わせください。
     </p>
 
-    <a href="" class="entry_link oswald_R fade-in">ENTRY</a>
+    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="entry_link oswald_R fade-in">ENTRY</a>
 
   </section>
