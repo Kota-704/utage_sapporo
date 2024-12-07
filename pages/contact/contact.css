@@ -1,22 +1,22 @@
 @font-face {
   font-family: "Noto Sans JP Bold";
-  src: url("/wp-content/themes/utage_sapporo/assets/fonts/NotoSansJP-Bold.ttf") format("truetype");
+  src: url("../fonts/NotoSansJP-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans JP Medium";
-  src: url("/wp-content/themes/utage_sapporo/assets/fonts/NotoSansJP-Medium.ttf") format("truetype");
+  src: url("../fonts/NotoSansJP-Medium.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans JP Regular";
-  src: url("/wp-content/themes/utage_sapporo/assets/fonts/NotoSansJP-Regular.ttf") format("truetype");
+  src: url("../fonts/NotoSansJP-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "M Plus 1c";
-  src: url("/wp-content/themes/utage_sapporo/assets/fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Oswald";
-  src: url("/wp-content/themes/utage_sapporo/assets/fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+  src: url("../fonts/Oswald-VariableFont_wght.ttf") format("truetype");
 }
 /*--------------------
 contact
@@ -74,6 +74,77 @@ textarea {
   font-size: 20px;
 }
 
+/*--------------------
+modal
+--------------------*/
+.wpcf7 form.sent .wpcf7-response-output {
+  display: none;
+}
+
+#wpcf7-modal {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+#wpcf7-modal__bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+#wpcf7-modal__wrap {
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  max-width: 1200px;
+  min-height: 400px;
+  width: 70%;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
+}
+
+.modal_text {
+  color: #050505;
+  font-size: 24px;
+}
+
+.modal_link {
+  border: 1px solid #050505;
+  color: #050505;
+  border-radius: 5px;
+  padding: 14px 18px;
+  text-align: center;
+  transition: background-color 0.6s ease, color 0.6s ease;
+  max-width: 240px;
+  width: 100%;
+  margin: 0 auto;
+  transition: opacity 0.8s ease-out, transform 0.3s ease-out, background-color 0.5s ease, color 0.5s ease;
+}
+.modal_link:hover {
+  background-color: #feeb00;
+  color: #050505;
+  border: 1px solid #feeb00;
+}
+.modal_link:hover {
+  background-color: #050505;
+  color: #ffffff;
+}
+
 @media (max-width: 500px) {
   .contact_title {
     font-size: 42px;
@@ -97,6 +168,9 @@ textarea {
   }
   .wpcf7-submit {
     margin-top: 24px;
+  }
+  .modal_text {
+    font-size: 20px;
   }
 }
 

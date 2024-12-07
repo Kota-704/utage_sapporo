@@ -57,6 +57,68 @@ textarea {
   font-size: 20px;
 }
 
+/*--------------------
+modal
+--------------------*/
+
+.wpcf7 form.sent .wpcf7-response-output {
+  display: none;
+}
+
+#wpcf7-modal {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+#wpcf7-modal__bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+#wpcf7-modal__wrap {
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  max-width: 1200px;
+  min-height: 400px;
+  width: 70%;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
+}
+
+.modal_text {
+  color: $black;
+  font-size: 24px;
+}
+
+.modal_link {
+  @include button_link($black, $yellow, $black, 240px);
+  margin: 0 auto;
+  transition: opacity 0.8s ease-out, transform 0.3s ease-out,
+    background-color 0.5s ease, color 0.5s ease;
+
+  &:hover {
+    background-color: $black;
+    color: $pure_white;
+  }
+}
+
 @media (max-width: 500px) {
   .contact_title {
     font-size: 42px;
@@ -86,5 +148,9 @@ textarea {
 
   .wpcf7-submit {
     margin-top: 24px;
+  }
+
+  .modal_text {
+    font-size: 20px;
   }
 }
