@@ -1,8 +1,8 @@
-// 送信完了後に表示するテキスト(*1)
+// 送信完了後に表示するテキスト
 const submitText =
   "お問い合わせ頂きありがとうございます。メッセージは正常に送信されました。";
 
-// 送信完了後に表示するリンク(*1)
+// 送信完了後に表示するリンク
 const submitLink = "/";
 
 // モーダル要素を作成する
@@ -26,11 +26,11 @@ modalElement.appendChild(modalWrap);
 modalWrap.appendChild(modalText);
 modalWrap.appendChild(modalLink);
 
-// モーダルをbody直下に追加する(*2)
+// モーダルをbody直下に追加する
 const bodyElement = document.getElementsByTagName("body");
 bodyElement[0].appendChild(modalElement);
 
-// 送信完了時にモーダルを表示する(*3)
+// 送信完了時にモーダルを表示する
 document.addEventListener("wpcf7mailsent", function (e) {
   modalElement.style.display = "flex";
 });
