@@ -47,11 +47,6 @@
 <div class="header">
   <div class="w_1280 wrapper">
     <div class="header_layout flex">
-      <div class="hamburger">
-        <span class="top"></span>
-        <span class="middle"></span>
-        <span class="bottom"></span>
-      </div>
       <nav class="header_nav">
         <ul class="header_nav_container flex oswald_B">
           <li class="header_list">
@@ -78,8 +73,15 @@
           </li>
         </ul>
       </nav>
-      <div class="empty"></div>
     </div>
+  </div>
+</div>
+
+<div class="w_1280 wrapper header_wrapper">
+  <div class="hamburger">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
   </div>
 </div>
 
