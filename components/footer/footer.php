@@ -31,6 +31,9 @@
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/components/aside/aside.js"></script>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/components/component_events/events.js"></script>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/components/component_news/news.js"></script>
+    <?php if (is_page('contact')) : ?>
+      <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/pages/contact/contact.js"></script>
+    <?php endif; ?>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <?php wp_footer(); ?>
   </body>
