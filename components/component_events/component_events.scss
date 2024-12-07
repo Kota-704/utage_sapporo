@@ -19,18 +19,18 @@ events
 
 .event_item {
   align-items: center;
+  display: flex !important;
   flex-direction: column;
-  justify-content: center;
+  gap: 24px;
+  height: 450px !important;
+  justify-content: space-between;
   max-width: 300px;
   width: 100%;
 }
 
 .event_image {
   margin: 0 auto;
-}
-
-.event_content {
-  margin-top: 24px;
+  max-height: 280px;
 }
 
 .event_title {
@@ -85,10 +85,12 @@ events
 
   .events_layout {
     gap: 0;
-    justify-content: initial;
+    justify-content: flex-end;
   }
 
   .event_item {
+    display: block !important;
+    height: initial !important;
     max-width: initial;
   }
 

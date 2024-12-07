@@ -19,18 +19,18 @@ news
 
 .news_item {
   align-items: center;
+  display: flex !important;
   flex-direction: column;
-  justify-content: center;
+  gap: 24px;
+  height: 450px !important;
+  justify-content: space-between;
   max-width: 300px;
   width: 100%;
 }
 
 .news_image {
   margin: 0 auto;
-}
-
-.news_content {
-  margin-top: 24px;
+  max-height: 280px;
 }
 
 .news_title {
@@ -92,7 +92,7 @@ news
 
   .news_layout {
     gap: 0;
-    justify-content: initial;
+    justify-content: flex-end;
   }
 
   .news_item {

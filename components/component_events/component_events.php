@@ -14,6 +14,7 @@ $query = new WP_Query($args);
         <?php if ($query->have_posts()) : ?>
             <?php while ($query->have_posts()) : $query->the_post(); ?>
                 <div class="swiper-slide event_item flex">
+                    <div class="empty"></div>
                     <?php
                     $thumbnail_url = get_the_post_thumbnail_url(get_the_ID(), 'medium');
                     if ($thumbnail_url) : ?>
