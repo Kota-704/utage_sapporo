@@ -1,22 +1,22 @@
 @font-face {
   font-family: "Noto Sans JP Bold";
-  src: url("/wp-content/themes/utage_sapporo/assets/fonts/NotoSansJP-Bold.ttf") format("truetype");
+  src: url("../fonts/NotoSansJP-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans JP Medium";
-  src: url("/wp-content/themes/utage_sapporo/assets/fonts/NotoSansJP-Medium.ttf") format("truetype");
+  src: url("../fonts/NotoSansJP-Medium.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans JP Regular";
-  src: url("/wp-content/themes/utage_sapporo/assets/fonts/NotoSansJP-Regular.ttf") format("truetype");
+  src: url("../fonts/NotoSansJP-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "M Plus 1c";
-  src: url("/wp-content/themes/utage_sapporo/assets/fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Oswald";
-  src: url("/wp-content/themes/utage_sapporo/assets/fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+  src: url("../fonts/Oswald-VariableFont_wght.ttf") format("truetype");
 }
 /*--------------------
 common_settings
@@ -149,12 +149,12 @@ textarea {
 }
 
 .oswald_B {
-  font-family: Oswald, sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
 }
 
 .oswald_M {
-  font-family: Oswald, sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 500;
 }
 
@@ -163,12 +163,12 @@ textarea {
 }
 
 .oswald_R {
-  font-family: Oswald, sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
 }
 
 .oswald_L {
-  font-family: Oswald, sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 300;
 }
 
