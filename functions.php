@@ -1,5 +1,30 @@
 <?php
 
+    /*--------------------
+    ブラウザタブ設定
+    --------------------*/
+    function my_theme_title_tag() {
+        add_theme_support('title-tag');
+    }
+    add_action('after_setup_theme', 'my_theme_title_tag');
+
+    add_filter('document_title_separator', 'custom_title_separator');
+    function custom_title_separator($separator) {
+        return '|';
+    }
+
+    add_filter('document_title_parts', function ($title) {
+        $new_title = [];
+        if (isset($title['site'])) {
+            $new_title['title'] = $title['site'];
+        }
+        if (isset($title['title'])) {
+            $new_title['site'] = $title['title'];
+        }
+        return $new_title;
+    });
+
+
   /*--------------------
   eventsの作成
   --------------------*/
