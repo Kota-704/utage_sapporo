@@ -24,7 +24,7 @@ $query = new WP_Query($args);
                     <?php endif; ?>
                     <div class="news_content">
                         <h3 class="news_title noto_B"><?php echo get_the_date(); ?></h3>
-                        <p class="news_description noto_M txt_center">
+                        <p class="news_description noto_M">
                             <?php the_excerpt(); ?>
                         </p>
                     </div>
