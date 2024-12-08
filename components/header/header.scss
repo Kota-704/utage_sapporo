@@ -256,6 +256,11 @@ hamburger_content
     display: none;
   }
 
+  .hamburger {
+    left: 20px;
+    top: 20px;
+  }
+
   .hamburger_content.active {
     height: 105vh;
   }
@@ -273,5 +278,14 @@ hamburger_content
 
   .link_button_container {
     flex-direction: column;
+    gap: 16px;
+  }
+
+  .link_button {
+    padding: 12px 18px;
+  }
+
+  .sns_link_container {
+    margin-top: 26px;
   }
 }
