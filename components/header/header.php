@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="<?php bloginfo( 'description' ); ?>" />
     <meta name="facebook-domain-verification" content="wvrn9f8q9k536orprilqvc5hh676eg" />
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/base.css" />
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/components/header/header.css" />
