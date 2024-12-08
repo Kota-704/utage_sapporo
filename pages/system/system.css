@@ -43,4 +43,17 @@ system
   margin-top: 12px;
 }
 
+@media (max-width: 500px) {
+  .system_title {
+    font-size: 42px;
+    padding-top: 72px;
+  }
+  .coming_soon {
+    font-size: 28px;
+  }
+  .under_maintenance {
+    font-size: 14px;
+  }
+}
+
 /*# sourceMappingURL=system.css.map */
