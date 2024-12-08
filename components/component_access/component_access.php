@@ -8,7 +8,9 @@
       北海道札幌市中央区南５条西３丁目６−１ 札幌東宝公楽ビル B1F
       </p>
         <a href="tel:011-211-6918" class="access_contact_link oswald_R" aria-label="電話番号 011-211-6918に電話をかける">TEL : 011-211-6918</a>
-        <span class="access_contact_link oswald_R">FAX : 011-211-6919</span>
+        <span class="access_contact_link oswald_R">
+          FAX : 011-211-6919
+        </span>
         <a href="mailto:INFO@UTAGECONTACT.COM" class="access_contact_link oswald_R" aria-label="メールアドレス INFO@UTAGECONTACT.COM にメールを送る">MAIL : INFO@UTAGECONTACT.COM</a>
     </div>
   </div>
