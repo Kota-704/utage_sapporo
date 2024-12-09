@@ -2,8 +2,8 @@
 const submitText =
   "お問い合わせ頂きありがとうございます。メッセージは正常に送信されました。";
 
-// 送信完了後に表示するリンク
-const submitLink = "/";
+// 送信完了後に表示するリンク(本番環境では'/'にする)
+const submitLink = "/dev";
 
 // モーダル要素を作成する
 const modalElement = document.createElement("div");
