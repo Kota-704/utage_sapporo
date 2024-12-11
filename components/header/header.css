@@ -118,11 +118,9 @@ header
 
 .header_nav_container {
   align-items: center;
+  gap: 60px;
   justify-content: space-between;
-}
-
-.header_nav_container * + * {
-  margin-left: 60px;
+  margin-left: -60px;
 }
 
 .header_logo {
