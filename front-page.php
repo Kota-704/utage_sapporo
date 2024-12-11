@@ -9,7 +9,7 @@
             <!-- サポートされていない場合のフォールバックメッセージ -->
             Your browser does not support the video tag.
           </video>
-          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/backgrounds/fv_background.png" alt="" class="background_image" />
+          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/backgrounds/fv_background.png" alt="fv_background" class="background_image" />
           <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/top/fv_title.png" alt="fv_title" class="fv_title_image pc_tablet" />
           <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/logo/logo_A_white.png" alt="fv_title" class="fv_title_image sp" />
         </div>

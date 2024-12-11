@@ -16,7 +16,7 @@
             </p>
           </div>
           <div class="recruit_top_container">
-            <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/DANCER/LINE_ALBUM_20231124_240104.jpg" alt="" class="recruit_image">
+            <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/DANCER/LINE_ALBUM_20231124_240104.jpg" alt="DANCER" class="recruit_image">
             <h3 class="job_heading dancer_heading noto_B">
               UTAGE DANCER<br />
               <span class="supplement noto_R">（シャンパンガール可）</span>
