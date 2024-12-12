@@ -32,6 +32,7 @@ gallery
   background-image: url("../../assets/img/backgrounds/gallery_background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: -2px;
   padding-bottom: 145px;
   padding-top: 158px;
   position: relative;
