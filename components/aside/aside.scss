@@ -23,6 +23,10 @@ aside
   display: block;
 }
 
+.vip_reservations_image {
+  width: 51px;
+}
+
 @media (max-width: 1024px) {
   .aside {
     background-color: $deep_black;
@@ -39,5 +43,9 @@ aside
     flex-direction: row;
     gap: 22px;
     height: 100%;
+  }
+
+  .vip_reservations_image {
+    width: 202px;
   }
 }
