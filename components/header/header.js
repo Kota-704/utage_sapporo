@@ -23,3 +23,30 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+/*--------------------
+headerの背景調整
+--------------------*/
+document.addEventListener("DOMContentLoaded", () => {
+  const about = document.getElementById("about");
+  const header = document.querySelector(".header");
+
+  if (about && header) {
+    const observerCallback = (entries) => {
+      const [entry] = entries;
+
+      if (entry.isIntersecting) {
+        header.classList.remove("scrolled");
+      } else {
+        header.classList.add("scrolled");
+      }
+    };
+
+    const observer = new IntersectionObserver(observerCallback, {
+      root: null,
+      threshold: 0,
+    });
+
+    observer.observe(about);
+  }
+});
