@@ -396,9 +396,24 @@ vip
   /*--------------------
   fv_500
   --------------------*/
-  .fv_title_image {
+  .fv_image_contaianer {
+    height: 100%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 30;
+  }
+  .fv_title_image.top {
+    height: auto;
+    max-width: 260px;
+    width: 70%;
+  }
+  .fv_title_image.bottom {
+    height: auto;
+    margin-top: 20px;
     max-width: 300px;
-    top: -5%;
     width: 75%;
   }
   /*--------------------

@@ -11,12 +11,14 @@
           </video>
           <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/backgrounds/fv_background.png" alt="fv_background" class="background_image" />
           <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/top/fv_title.png" alt="fv_title" class="fv_title_image pc_tablet" />
-          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/logo/logo_A_white.png" alt="fv_title" class="fv_title_image sp" />
+          <div class="fv_image_contaianer sp">
+            <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/top/about_title_sp.png" alt="fv_title" class="fv_title_image top" />
+            <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/logo/logo_A_white.png" alt="fv_title" class="fv_title_image bottom" />
+          </div>
         </div>
       </section>
 
       <section id="about" class="about">
-        <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/top/about_title_sp.png" alt="about_title sp" class="about_title_image sp" />
         <p class="about_text noto_R fade-in">
           それも今何しろこの努力めというものの所より叱るましだろ。<br /><br />
 
