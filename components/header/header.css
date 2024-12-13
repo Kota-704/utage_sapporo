@@ -125,7 +125,7 @@ header
   align-items: center;
   gap: 60px;
   justify-content: space-between;
-  margin-left: -60px;
+  margin-left: -68px;
 }
 
 .header_logo {
@@ -247,8 +247,9 @@ hamburger_content
   }
 }
 @media (max-width: 820px) {
-  .header_nav_container * + * {
-    margin-left: 28px;
+  .header_nav_container {
+    gap: 28px;
+    margin-left: 0;
   }
   /*--------------------
   hamburger_content
@@ -272,6 +273,9 @@ hamburger_content
     background-color: transparent;
     height: 60px;
   }
+  .header.scrolled {
+    background-color: transparent;
+  }
   .header_nav {
     display: none;
   }
@@ -280,13 +284,15 @@ hamburger_content
     top: 20px;
   }
   .hamburger_content.active {
-    height: 105vh;
+    max-height: 100vh;
+    overflow-y: auto;
   }
   .right_content {
+    margin-top: 24px;
     width: 100%;
   }
   .hamburger_list_container {
-    gap: 9px;
+    gap: 8px;
     grid-auto-flow: row;
     grid-template-columns: initial;
     text-align: center;
