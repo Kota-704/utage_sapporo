@@ -33,6 +33,7 @@ contact
 
 .page_content {
   color: #ffffff;
+  padding-bottom: 124px;
 }
 
 input,
@@ -59,12 +60,22 @@ textarea {
 
 .wpcf7-submit {
   border: 1px solid #feeb00;
-  border-radius: 5px;
   color: #feeb00;
-  display: block;
-  margin: 77px auto 124px;
+  border-radius: 5px;
+  padding: 14px 18px;
+  text-align: center;
+  transition: background-color 0.6s ease, color 0.6s ease;
   max-width: 349px;
   width: 100%;
+  display: block;
+  margin: 77px auto 0;
+  padding: 0;
+  transition: opacity 0.8s ease-out, transform 0.3s ease-out, background-color 0.5s ease, color 0.5s ease;
+}
+.wpcf7-submit:hover {
+  background-color: #050505;
+  color: #feeb00;
+  border: 1px solid #050505;
 }
 
 .wpcf7 form .wpcf7-response-output {
@@ -108,16 +119,16 @@ modal
   align-items: center;
   background-color: #ffffff;
   border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
   flex-direction: column;
   gap: 40px;
   justify-content: center;
   max-width: 1200px;
   min-height: 400px;
-  width: 70%;
   padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-align: center;
+  width: 70%;
 }
 
 .modal_text {
