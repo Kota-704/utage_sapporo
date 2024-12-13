@@ -26,12 +26,11 @@ body {
 
 body::before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-attachment: fixed;
+  height: 100vh;
   background-image: url("../img/backgrounds/page_background.png");
   background-size: cover;
   background-repeat: repeat-y;
@@ -209,6 +208,10 @@ animation
   /*--------------------
   common_settings
   --------------------*/
+  body::before {
+    background-size: contain;
+  }
+
   .tablet {
     display: none !important;
   }
