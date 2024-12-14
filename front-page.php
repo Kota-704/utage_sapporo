@@ -29,15 +29,18 @@
       </section>
 
       <section id="events" class="events">
-        <div class="events_container fade-in">
-          <span class="frame_left pc_tablet"></span>
-          <span class="frame_right pc_tablet"></span>
-          <h2 class="event_top_title oswald_B">
-            <span class="line_top sp"></span>
-            PICK UP EVENTS
-            <span class="line_bottom sp"></span>
-          </h2>
-          <?php get_template_part('components/component_events/component_events'); ?>
+        <div class="events_gradation"></div>
+        <div class="events_wrapper">
+          <div class="events_container fade-in">
+            <span class="frame_left pc_tablet"></span>
+            <span class="frame_right pc_tablet"></span>
+            <h2 class="event_top_title oswald_B">
+              <span class="line_top sp"></span>
+              PICK UP EVENTS
+              <span class="line_bottom sp"></span>
+            </h2>
+            <?php get_template_part('components/component_events/component_events'); ?>
+          </div>
         </div>
       </section>
 

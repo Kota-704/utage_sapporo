@@ -59,8 +59,9 @@ about
   color: $pure_white;
   margin: 0 auto;
   max-width: 792px;
+  min-height: 640px;
   padding-bottom: 130px;
-  padding-top: 150px;
+  padding-top: 200px;
   text-align: center;
   width: 100%;
 }
@@ -70,8 +71,22 @@ events
 --------------------*/
 
 .events {
-  padding: 168px;
+  padding-bottom: 168px;
   position: relative;
+}
+
+.events_gradation {
+  height: 267px;
+  background: transparent linear-gradient(180deg, #000000 0%, #00000000 100%) 0%
+    0% no-repeat padding-box;
+  width: 100%;
+}
+
+.events_wrapper {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 0 40px;
+  width: 100%;
 }
 
 .events_container {
@@ -161,6 +176,14 @@ vip
 
 @media (max-width: 1400px) {
   /*--------------------
+  about_1400
+  --------------------*/
+
+  .about_text {
+    min-height: 525px;
+    padding-top: 150px;
+  }
+  /*--------------------
   events_1400
   --------------------*/
 
@@ -173,7 +196,7 @@ vip
   }
 
   .frame_left {
-    max-width: 430px;
+    max-width: 580px;
   }
 
   /*--------------------
@@ -193,7 +216,6 @@ vip
 }
 
 @media (max-width: 1024px) {
-  .events,
   .news {
     padding: 120px 26px;
   }
@@ -210,6 +232,14 @@ vip
 @media (max-width: 820px) {
   .about_text {
     padding: 150px 24px 130px 24px;
+  }
+
+  .events {
+    padding-bottom: 120px;
+  }
+
+  .events_gradation {
+    height: 200px;
   }
 
   .events_container {
@@ -333,6 +363,7 @@ vip
   }
 
   .about_text {
+    min-height: 460px;
     padding: 38px 24px 130px 24px;
   }
 
@@ -341,7 +372,15 @@ vip
   --------------------*/
 
   .events {
-    padding: 120px 0 94px;
+    padding-bottom: 94px;
+  }
+
+  .events_gradation {
+    height: 120px;
+  }
+
+  .events_wrapper {
+    padding: 0;
   }
 
   .events_container {
