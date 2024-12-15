@@ -44,39 +44,74 @@
 
 <body <?php body_class(); ?>>
 
+<?php if (is_front_page()) : ?>
+  <div class="fv_header">
+    <div class="w_1280 wrapper">
+      <div class="header_layout flex">
+        <nav class="header_nav">
+          <ul class="header_nav_container flex oswald_B">
+            <li class="header_list">
+              <a href="<?php echo esc_url(home_url("/#about")); ?>" class="header_link">ABOUT</a>
+            </li>
+            <li class="header_list">
+              <a href="<?php echo esc_url(home_url("/#events")); ?>" class="header_link">PICK UP EVENTS</a>
+            </li>
+            <li class="header_list">
+              <a href="<?php echo esc_url(home_url("/#news")); ?>" class="header_link">NEWS</a>
+            </li>
+            <a href="<?php echo esc_url(home_url('/')); ?>">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/logo/logo_B_white.png" alt="UTAGE SAPPORO" class="header_logo" />
+            </a>
 
-<div class="header">
-  <div class="w_1280 wrapper">
-    <div class="header_layout flex">
-      <nav class="header_nav">
-        <ul class="header_nav_container flex oswald_B">
-          <li class="header_list">
-            <a href="<?php echo esc_url(home_url("/#about")); ?>" class="header_link">ABOUT</a>
-          </li>
-          <li class="header_list">
-            <a href="<?php echo esc_url(home_url("/#events")); ?>" class="header_link">PICK UP EVENTS</a>
-          </li>
-          <li class="header_list">
-            <a href="<?php echo esc_url(home_url("/#news")); ?>" class="header_link">NEWS</a>
-          </li>
-          <a href="<?php echo esc_url(home_url('/')); ?>">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/logo/logo_B_white.png" alt="UTAGE SAPPORO" class="header_logo" />
-          </a>
-
-          <li class="header_list">
-            <a href="<?php echo esc_url(home_url("/#campaign")); ?>" class="header_link">CAMPAIGN</a>
-          </li>
-          <li class="header_list">
-            <a href="<?php echo esc_url(home_url("/#vip")); ?>" class="header_link">VIP</a>
-          </li>
-          <li class="header_list">
-            <a href="<?php echo esc_url(home_url("/#access")); ?>" class="header_link">ACCESS</a>
-          </li>
-        </ul>
-      </nav>
+            <li class="header_list">
+              <a href="<?php echo esc_url(home_url("/#campaign")); ?>" class="header_link">CAMPAIGN</a>
+            </li>
+            <li class="header_list">
+              <a href="<?php echo esc_url(home_url("/#vip")); ?>" class="header_link">VIP</a>
+            </li>
+            <li class="header_list">
+              <a href="<?php echo esc_url(home_url("/#access")); ?>" class="header_link">ACCESS</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
-</div>
+
+<?php else: ?>
+  <div class="header">
+    <div class="w_1280 wrapper">
+      <div class="header_layout flex">
+        <nav class="header_nav">
+          <ul class="header_nav_container flex oswald_B">
+            <li class="header_list">
+              <a href="<?php echo esc_url(home_url("/#about")); ?>" class="header_link">ABOUT</a>
+            </li>
+            <li class="header_list">
+              <a href="<?php echo esc_url(home_url("/#events")); ?>" class="header_link">PICK UP EVENTS</a>
+            </li>
+            <li class="header_list">
+              <a href="<?php echo esc_url(home_url("/#news")); ?>" class="header_link">NEWS</a>
+            </li>
+            <a href="<?php echo esc_url(home_url('/')); ?>">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/logo/logo_B_white.png" alt="UTAGE SAPPORO" class="header_logo" />
+            </a>
+
+            <li class="header_list">
+              <a href="<?php echo esc_url(home_url("/#campaign")); ?>" class="header_link">CAMPAIGN</a>
+            </li>
+            <li class="header_list">
+              <a href="<?php echo esc_url(home_url("/#vip")); ?>" class="header_link">VIP</a>
+            </li>
+            <li class="header_list">
+              <a href="<?php echo esc_url(home_url("/#access")); ?>" class="header_link">ACCESS</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <?php endif; ?>
 
 <div class="w_1280 wrapper header_wrapper">
   <div class="hamburger">

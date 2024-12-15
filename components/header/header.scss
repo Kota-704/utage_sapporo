@@ -7,8 +7,12 @@ header
 --------------------*/
 
 .fv_header {
-  background-color: rgba(17, 17, 17, 0.75);
+  background-color: transparent;
   height: 120px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: background-color 0.3s ease;
   width: 100%;
   z-index: 120;
 }
@@ -24,11 +28,15 @@ header
   z-index: 120;
 }
 
-.header.scrolled {
-  background-color: #111111;
+.fv_header.scrolled {
+  background-color: rgba(17, 17, 17, 0.75);
 }
 
 .header.active {
+  display: none;
+}
+
+.fv_header.active {
   display: none;
 }
 
@@ -260,6 +268,10 @@ hamburger_content
     background-color: transparent;
   }
 
+  .fv_header.scrolled {
+    background-color: transparent;
+  }
+
   .header_nav {
     display: none;
   }
@@ -267,6 +279,11 @@ hamburger_content
   .hamburger {
     left: 20px;
     top: 20px;
+  }
+
+  .hamburger_content_layout {
+    overflow: scroll;
+    padding: 240px 24px;
   }
 
   .hamburger_content.active {

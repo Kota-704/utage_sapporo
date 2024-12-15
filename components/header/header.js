@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector(".hamburger");
   const hamburgerContent = document.querySelector(".hamburger_content");
   const header = document.querySelector(".header");
+  const fvHeader = document.querySelector(".fv_header");
   const hamburgerLinks = document.querySelectorAll(".hamburger_link");
 
   if (hamburger && hamburgerContent && header) {
@@ -21,6 +22,20 @@ document.addEventListener("DOMContentLoaded", () => {
         header.classList.remove("active");
       });
     });
+  } else if (hamburger && hamburgerContent && fvHeader) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      hamburgerContent.classList.toggle("active");
+      fvHeader.classList.toggle("active");
+    });
+
+    hamburgerLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        hamburgerContent.classList.remove("active");
+        fvHeader.classList.remove("active");
+      });
+    });
   }
 });
 
@@ -29,7 +44,7 @@ headerの背景調整
 --------------------*/
 document.addEventListener("DOMContentLoaded", () => {
   const about = document.getElementById("about");
-  const header = document.querySelector(".header");
+  const header = document.querySelector(".fv_header");
 
   if (about && header) {
     const observerCallback = (entries) => {
