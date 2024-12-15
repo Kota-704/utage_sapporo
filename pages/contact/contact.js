@@ -12,6 +12,8 @@ const modalBg = document.createElement("div");
 modalBg.id = "wpcf7-modal__bg";
 const modalWrap = document.createElement("div");
 modalWrap.id = "wpcf7-modal__wrap";
+const modalClose = document.createElement("div");
+modalClose.classList.add("modal_close");
 const modalText = document.createElement("p");
 modalText.classList.add("modal_text");
 modalText.appendChild(document.createTextNode(submitText));
@@ -23,6 +25,7 @@ modalLink.appendChild(document.createTextNode("TOPに戻る"));
 // モーダル要素をDOMツリーに追加する
 modalElement.appendChild(modalBg);
 modalElement.appendChild(modalWrap);
+modalWrap.appendChild(modalClose);
 modalWrap.appendChild(modalText);
 modalWrap.appendChild(modalLink);
 
@@ -37,5 +40,9 @@ document.addEventListener("wpcf7mailsent", function (e) {
 
 // モーダル範囲外をクリックしたときにモーダルを非表示にする
 modalBg.addEventListener("click", function () {
+  modalElement.style.display = "none";
+});
+
+modalClose.addEventListener("click", () => {
   modalElement.style.display = "none";
 });

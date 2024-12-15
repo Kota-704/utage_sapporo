@@ -100,8 +100,37 @@ modal
   max-width: 1200px;
   min-height: 400px;
   padding: 20px;
+  position: relative;
   text-align: center;
   width: 70%;
+}
+
+.modal_close {
+  position: absolute;
+  top: 32px;
+  right: 58px;
+
+  &::before {
+    content: "";
+    background-color: $black;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: rotate(45deg);
+    width: 40px;
+  }
+
+  &::after {
+    content: "";
+    background-color: $black;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: rotate(-45deg);
+    width: 40px;
+  }
 }
 
 .modal_text {
@@ -150,6 +179,17 @@ modal
 
   .wpcf7-submit {
     margin-top: 24px;
+  }
+
+  .modal_close {
+    top: 28px;
+    right: 44px;
+
+    &::before,
+    &::after {
+      height: 2px;
+      width: 32px;
+    }
   }
 
   .modal_text {
