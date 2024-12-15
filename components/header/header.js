@@ -35,16 +35,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const observerCallback = (entries) => {
       const [entry] = entries;
 
-      if (entry.isIntersecting) {
-        header.classList.remove("scrolled");
-      } else {
+      if (entry.boundingClientRect.top <= 0) {
         header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
       }
     };
 
     const observer = new IntersectionObserver(observerCallback, {
       root: null,
-      threshold: 0,
+      threshold: 1.0,
     });
 
     observer.observe(about);
