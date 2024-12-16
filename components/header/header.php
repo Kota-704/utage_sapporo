@@ -60,7 +60,7 @@
               <a href="<?php echo esc_url(home_url("/#news")); ?>" class="header_link">NEWS</a>
             </li>
             <a href="<?php echo esc_url(home_url('/')); ?>">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/logo/logo_B_white.png" alt="UTAGE SAPPORO" class="header_logo" />
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/logo/logo_B_white.svg" alt="UTAGE SAPPORO" class="header_logo" />
             </a>
 
             <li class="header_list">
@@ -94,7 +94,7 @@
               <a href="<?php echo esc_url(home_url("/#news")); ?>" class="header_link">NEWS</a>
             </li>
             <a href="<?php echo esc_url(home_url('/')); ?>">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/logo/logo_B_white.png" alt="UTAGE SAPPORO" class="header_logo" />
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/logo/logo_B_white.svg" alt="UTAGE SAPPORO" class="header_logo" />
             </a>
 
             <li class="header_list">
@@ -126,7 +126,7 @@
   <div class="hamburger_content_layout flex">
     <div class="left_content pc_tablet">
       <a href="<?php echo esc_url(home_url('/')); ?>">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/logo/logo_B_white.png" alt="UTAGE SAPPORO" />
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/logo/logo_B_white.svg" alt="UTAGE SAPPORO" />
       </a>
     </div>
     <div class="right_content">
