@@ -33,6 +33,8 @@
       <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/pages/system/system.css">
     <?php elseif (is_post_type_archive('schedule')) : ?>
       <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/pages/schedule/schedule.css">
+    <?php elseif (is_page('attention')) : ?>
+      <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/pages/attention/attention.css">
     <?php endif; ?>
     <link
       rel="stylesheet"
@@ -165,6 +167,9 @@
         </li>
         <li class="hamburger_list">
           <a href="<?php echo esc_url(home_url("/#access")); ?>" class="hamburger_link">ACCESS</a>
+        </li>
+        <li class="hamburger_list">
+          <a href="<?php echo esc_url(home_url("/attention")); ?>" class="hamburger_link">ATTENTION</a>
         </li>
       </ul>
       <div class="link_button_container flex oswald_R">
