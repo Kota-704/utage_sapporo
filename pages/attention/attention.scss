@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@import "../../assets/scss/variables.scss";
+
+/*--------------------
+attention
+--------------------*/
+.attention_title {
+  @include cut_out_letters2($yellow, 65px);
+  padding-top: 182px;
+  position: relative;
+  text-align: center;
+  z-index: 10;
+}
+
+.section_title_layout {
+  align-items: center;
+  color: $pure_white;
+  gap: 17px;
+  margin-top: 96px;
+}
+
+.section_title {
+  font-size: 27px;
+}
+
+.section_subtitle {
+  font-size: 12px;
+}
+
+.horizon {
+  background-color: $yellow;
+  display: block;
+  height: 1px;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.description {
+  color: $pure_white;
+  margin-top: 18px;
+  max-width: 800px;
+  width: 100%;
+}

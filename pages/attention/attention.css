@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Noto Sans JP Bold";
+  src: url("../fonts/NotoSansJP-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans JP Medium";
+  src: url("../fonts/NotoSansJP-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans JP Regular";
+  src: url("../fonts/NotoSansJP-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "M Plus 1c";
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+}
+/*--------------------
+attention
+--------------------*/
+.attention_title {
+  color: transparent;
+  font-size: 65px;
+  -webkit-text-stroke: #feeb00 1px;
+  padding-top: 182px;
+  position: relative;
+  text-align: center;
+  z-index: 10;
+}
+
+.section_title_layout {
+  align-items: center;
+  color: #ffffff;
+  gap: 17px;
+  margin-top: 96px;
+}
+
+.section_title {
+  font-size: 27px;
+}
+
+.section_subtitle {
+  font-size: 12px;
+}
+
+.horizon {
+  background-color: #feeb00;
+  display: block;
+  height: 1px;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.description {
+  color: #ffffff;
+  margin-top: 18px;
+  max-width: 800px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=attention.css.map */
