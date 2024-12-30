@@ -38,6 +38,10 @@ attention
   margin-top: 96px;
 }
 
+.section_title_layout:not(:first-child) {
+  margin-top: 82px;
+}
+
 .section_title {
   font-size: 27px;
 }
@@ -57,6 +61,18 @@ attention
 .description {
   color: #ffffff;
   margin-top: 18px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.attention_image_wrapper {
+  margin-bottom: 100px;
+  margin-top: 84px;
+}
+
+.attention_image {
+  display: block;
+  margin: 0 auto;
   max-width: 800px;
   width: 100%;
 }
