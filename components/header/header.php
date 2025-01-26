@@ -35,6 +35,8 @@
       <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/pages/schedule/schedule.css">
     <?php elseif (is_page('attention')) : ?>
       <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/pages/attention/attention.css">
+    <?php elseif (is_page('vip')) : ?>
+      <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/pages/vip/vip.css">
     <?php endif; ?>
     <link
       rel="stylesheet"
