@@ -1,7 +1,7 @@
-<section class="gallery">
-    <h2 class="gallery_title oswald_M">GALLERY</h2>
+<section class="vip">
+    <h2 class="vip_title oswald_M">VIP</h2>
     <div class="w_1280 wrapper">
-        <div class="gallery_container grid">
+        <div class="vip_container grid">
             <?php
             $page_id = get_the_ID();
             $content = get_post_field('post_content', $page_id);
@@ -12,8 +12,8 @@
                 foreach ($matches[1] as $index => $image_url) :
                     $alt_text = $matches[2][$index];
             ?>
-                    <div class="gallery_item">
-                        <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($alt_text); ?>" class="gallery_image">
+                    <div class="vip_item">
+                        <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($alt_text); ?>" class="vip_image">
                     </div>
             <?php
                 endforeach;

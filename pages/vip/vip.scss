@@ -5,3 +5,10 @@
 /*--------------------
 vip
 --------------------*/
+.vip_title {
+  @include cut_out_letters2($yellow, 65px);
+  padding-top: 182px;
+  position: relative;
+  text-align: center;
+  z-index: 10;
+}
