@@ -33,6 +33,8 @@
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/components/component_news/news.js"></script>
     <?php if (is_page('contact')) : ?>
       <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/pages/contact/contact.js"></script>
+    <?php elseif (is_page('vip')) : ?>
+      <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/pages/vip/vip.js"></script>
     <?php endif; ?>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <?php wp_footer(); ?>
