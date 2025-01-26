@@ -69,7 +69,7 @@
               <a href="<?php echo esc_url(home_url("/#campaign")); ?>" class="header_link">CAMPAIGN</a>
             </li>
             <li class="header_list">
-              <a href="<?php echo esc_url(home_url("/#vip")); ?>" class="header_link">VIP</a>
+              <a href="<?php echo esc_url(home_url("/vip")); ?>" class="header_link">VIP</a>
             </li>
             <li class="header_list">
               <a href="<?php echo esc_url(home_url("/#access")); ?>" class="header_link">ACCESS</a>
@@ -160,7 +160,7 @@
           <a href="<?php echo esc_url(home_url('/system')); ?>" class="hamburger_link">SYSTEM</a>
         </li>
         <li class="hamburger_list">
-          <a href="<?php echo esc_url(home_url("/#vip")); ?>" class="hamburger_link">VIP</a>
+          <a href="<?php echo esc_url(home_url("/vip")); ?>" class="hamburger_link">VIP</a>
         </li>
         <li class="hamburger_list">
           <a href="<?php echo esc_url(home_url('/rental')); ?>" class="hamburger_link">RENTAL</a>
