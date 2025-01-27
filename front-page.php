@@ -62,7 +62,9 @@
       </section>
 
       <section id="vip" class="vip flex">
-        <h2 class="section_title oswald_M">VIP</h2>
+        <h2 class="section_title vip_title_front oswald_M">
+          <a href="<?php echo esc_url(home_url("/vip")); ?>" class="vip_link">VIP</a>
+        </h2>
       </section>
 
       <section id="access" class="access">
