@@ -31,7 +31,6 @@ fv
 .fv_video {
   height: 100%;
   left: 0;
-  -o-object-fit: cover;
   object-fit: cover;
   opacity: 0.1;
   position: absolute;
@@ -43,7 +42,6 @@ fv
 .fv_title_image,
 .background_image {
   height: 100%;
-  -o-object-fit: cover;
   object-fit: cover;
   position: absolute;
   width: 100%;
@@ -54,7 +52,6 @@ fv
   left: 50%;
   margin: 0 auto;
   max-width: 725px;
-  -o-object-fit: contain;
   object-fit: contain;
   top: 0;
   transform: translateX(-50%);
@@ -118,7 +115,6 @@ events
   position: absolute;
   width: 100%;
 }
-
 .frame_left::before, .frame_left::after {
   content: "";
   left: 0;
@@ -126,7 +122,6 @@ events
   position: absolute;
   width: 100%;
 }
-
 .frame_left::before {
   border-left: 1px solid #feeb00;
   border-top: 1px solid #feeb00;
@@ -134,7 +129,6 @@ events
   height: calc((100% - 68px) * 0.2);
   top: 0;
 }
-
 .frame_left::after {
   border-bottom: 1px solid #feeb00;
   border-left: 1px solid #feeb00;
@@ -151,7 +145,6 @@ events
   position: absolute;
   width: 100%;
 }
-
 .frame_right::before, .frame_right::after {
   content: "";
   max-width: 620px;
@@ -159,13 +152,11 @@ events
   right: 0;
   width: 100%;
 }
-
 .frame_right::before {
   border-right: 1px solid #feeb00;
   height: calc((100% - 68px) * 0.85);
   top: 0;
 }
-
 .frame_right::after {
   border-bottom: 1px solid #feeb00;
   border-right: 1px solid #feeb00;
@@ -224,7 +215,6 @@ news
   position: absolute;
   width: 100%;
 }
-
 .news_container .frame_left::before, .news_container .frame_left::after {
   content: "";
   left: 0;
@@ -232,7 +222,6 @@ news
   position: absolute;
   width: 100%;
 }
-
 .news_container .frame_left::before {
   border-left: 1px solid #feeb00;
   border-top: 1px solid #feeb00;
@@ -240,7 +229,6 @@ news
   height: calc((100% - 68px) * 0.2);
   top: 0;
 }
-
 .news_container .frame_left::after {
   border-bottom: 1px solid #feeb00;
   border-left: 1px solid #feeb00;
@@ -257,7 +245,6 @@ news
   position: absolute;
   width: 100%;
 }
-
 .news_container .frame_right::before, .news_container .frame_right::after {
   content: "";
   max-width: 420px;
@@ -265,13 +252,11 @@ news
   right: 0;
   width: 100%;
 }
-
 .news_container .frame_right::before {
   border-right: 1px solid #feeb00;
   height: calc((100% - 68px) * 0.85);
   top: 0;
 }
-
 .news_container .frame_right::after {
   border-bottom: 1px solid #feeb00;
   border-right: 1px solid #feeb00;
@@ -298,11 +283,27 @@ vip
 --------------------*/
 .vip {
   align-items: center;
-  background-image: url(../img/backgrounds/vip_background.png);
-  background-size: cover;
   height: 455px;
   justify-content: center;
   width: 100%;
+}
+
+.vip_title_front {
+  width: 100%;
+}
+
+.vip_link {
+  display: block;
+  width: 100%;
+  height: 455px;
+  background-image: url(../img/backgrounds/vip_background.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  line-height: 455px;
+  font-size: inherit;
 }
 
 @media (max-width: 1400px) {
@@ -326,33 +327,45 @@ vip
     max-width: 580px;
   }
   /*--------------------
-  campaign
+  campaign_1400
   --------------------*/
   .campaign {
     padding-bottom: 124px;
   }
   /*--------------------
-  news
+  news_1400
   --------------------*/
   .news_container .frame_left {
     max-width: 720px;
   }
 }
 @media (max-width: 1024px) {
-  .news {
-    padding: 120px 26px;
-  }
+  /*--------------------
+  events_1024
+  --------------------*/
   .event_top_title {
     right: -10px;
+  }
+  /*--------------------
+  news_1024
+  --------------------*/
+  .news {
+    padding: 120px 26px;
   }
   .news_container .frame_left {
     max-width: 700px;
   }
 }
 @media (max-width: 820px) {
+  /*--------------------
+  about_820
+  --------------------*/
   .about_text {
     padding: 150px 24px 130px 24px;
   }
+  /*--------------------
+  events_820
+  --------------------*/
   .events {
     padding-bottom: 120px;
   }
@@ -365,6 +378,9 @@ vip
   .events_container .frame_left::before {
     max-width: 200px;
   }
+  /*--------------------
+  news_820
+  --------------------*/
   .news_container {
     padding: 78px 30px;
   }
@@ -520,6 +536,10 @@ vip
   .vip {
     height: 177px;
   }
-} 
+  .vip_link {
+    height: 177px;
+    line-height: 177px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
