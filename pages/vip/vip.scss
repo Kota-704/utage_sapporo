@@ -87,3 +87,34 @@ vip
 .vip_img:first-of-type {
   margin-bottom: 50px;
 }
+
+@media (max-width: 500px) {
+  .vip_title {
+    font-size: 42px;
+    margin-top: 0px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
+  .tab_layout {
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-bottom: 26px;
+    margin-top: 37px;
+  }
+
+  .tab-button {
+    font-size: 18px;
+    max-width: 170px;
+    padding: 6px 0;
+    width: 50%;
+  }
+
+  .tab-contents {
+    margin-bottom: 28px;
+  }
+
+  .vip_img:first-of-type {
+    margin-bottom: 17px;
+  }
+}
