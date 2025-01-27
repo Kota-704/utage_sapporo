@@ -14,13 +14,16 @@
           <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/VIP/PLATINUM VIP.jpg" alt="pratinum_floor_image" class="vip_img">
         </div>
         <div class="tab-content" id="gold">
-          <p>GOLD VIP content here...</p>
+          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/VIP/pratinam_0.jpg" alt="pratinum_floor_map" class="vip_img">
+          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/VIP/PLATINUM VIP.jpg" alt="pratinum_floor_image" class="vip_img">
         </div>
         <div class="tab-content" id="silver">
-          <p>SILVER VIP content here...</p>
+          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/VIP/pratinam_0.jpg" alt="pratinum_floor_map" class="vip_img">
+          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/VIP/PLATINUM VIP.jpg" alt="pratinum_floor_image" class="vip_img">
         </div>
         <div class="tab-content" id="royal">
-          <p>ROYAL VIP content here...</p>
+          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/VIP/pratinam_0.jpg" alt="pratinum_floor_map" class="vip_img">
+          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/VIP/PLATINUM VIP.jpg" alt="pratinum_floor_image" class="vip_img">
         </div>
       </div>
     </div>
