@@ -14,16 +14,16 @@
           <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/VIP/PLATINUM VIP.jpg" alt="pratinum_floor_image" class="vip_img">
         </div>
         <div class="tab-content" id="gold">
-          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/VIP/pratinam_0.jpg" alt="pratinum_floor_map" class="vip_img">
-          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/VIP/PLATINUM VIP.jpg" alt="pratinum_floor_image" class="vip_img">
+          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/VIP/gold_0.jpg" alt="pratinum_floor_map" class="vip_img">
+          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/VIP/GOLD VIP.jpg" alt="pratinum_floor_image" class="vip_img">
         </div>
         <div class="tab-content" id="silver">
-          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/VIP/pratinam_0.jpg" alt="pratinum_floor_map" class="vip_img">
-          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/VIP/PLATINUM VIP.jpg" alt="pratinum_floor_image" class="vip_img">
+          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/VIP/silver_0.jpg" alt="pratinum_floor_map" class="vip_img">
+          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/VIP/SILVER VIP.jpg" alt="pratinum_floor_image" class="vip_img">
         </div>
         <div class="tab-content" id="royal">
-          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/VIP/pratinam_0.jpg" alt="pratinum_floor_map" class="vip_img">
-          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/VIP/PLATINUM VIP.jpg" alt="pratinum_floor_image" class="vip_img">
+          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/VIP/royal_0.jpg" alt="pratinum_floor_map" class="vip_img">
+          <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/assets/img/VIP/ROYAL VIP.jpg" alt="pratinum_floor_image" class="vip_img">
         </div>
       </div>
     </div>
