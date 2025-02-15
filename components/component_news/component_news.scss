@@ -51,6 +51,7 @@ news
 .no_news {
   color: $pure_white;
   font-size: 22px;
+  margin: 0 auto;
 }
 
 @media (max-width: 1400px) {
@@ -84,6 +85,10 @@ news
   .news_image {
     width: 100%;
   }
+
+  .no_news {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -112,5 +117,9 @@ news
 
   .news_description {
     margin: 0 auto;
+  }
+
+  .no_news {
+    font-size: 16px;
   }
 }

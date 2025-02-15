@@ -21,7 +21,7 @@
               </a>
             </li>
           </ul>
-          <small class="copyright txt_center m1c">&copy;2024 UTAGE SAPPORO</small>
+          <small class="copyright txt_center m1c">&copy;2025 UTAGE SAPPORO</small>
         </div>
       </div>
     </div>
