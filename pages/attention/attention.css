@@ -1,22 +1,22 @@
 @font-face {
   font-family: "Noto Sans JP Bold";
-  src: url("../fonts/NotoSansJP-Bold.ttf") format("truetype");
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/NotoSansJP-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans JP Medium";
-  src: url("../fonts/NotoSansJP-Medium.ttf") format("truetype");
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/NotoSansJP-Medium.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Sans JP Regular";
-  src: url("../fonts/NotoSansJP-Regular.ttf") format("truetype");
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/NotoSansJP-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "M Plus 1c";
-  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Oswald";
-  src: url("../fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+  src: url("/wp-content/themes/utage_sapporo/assets/fonts/Oswald-VariableFont_wght.ttf") format("truetype");
 }
 /*--------------------
 attention
@@ -97,4 +97,6 @@ attention
   .attention_image_wrapper {
     margin-bottom: 0;
   }
-}/*# sourceMappingURL=attention.css.map */
+}
+
+/*# sourceMappingURL=attention.css.map */
